@@ -9,12 +9,12 @@
     "publicadoEm": "2026-10-21T10:24:13.079Z"
   },
   "ficha": {
-    "versao": "1.5.4",
-    "arquivo": "ficha/app-1.5.4.asar",
-    "tamanho": 74453,
-    "sha256": "cabb429cf6c2b336bcd3fba6271092fc5927c69a8849bdf05d87eef3273092ec",
+    "versao": "1.5.5",
+    "arquivo": "ficha/app-1.5.5.asar",
+    "tamanho": 75461,
+    "sha256": "b98fe67ed61647a51569c50ca27fcdc1abf88283e5ff85c2a45796226e7e7be0",
     "electron": "33.2.1",
-    "notas": "Nas cores Azul, Verde, Vinho e Âmbar o texto da ficha impressa também sai colorido, sem gastar tinta preta.",
-    "publicadoEm": "2026-10-21T15:00:04.928Z"
+    "notas": "Campo de Observação no pedido: aparece em destaque na ficha impressa e vai junto para o caixa.",
+    "publicadoEm": "2026-10-21T15:18:35.114Z"
   }
 }
