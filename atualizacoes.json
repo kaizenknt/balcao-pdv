@@ -9,12 +9,12 @@
     "publicadoEm": "2026-10-21T05:27:31.744Z"
   },
   "ficha": {
-    "versao": "1.5.0",
-    "arquivo": "ficha/app-1.5.0.asar",
-    "tamanho": 69588,
-    "sha256": "3bb783b2d5e6c2ed0ebed569f970b86b6bcff18f2a58521109b16abe2e4bbf1b",
+    "versao": "1.5.1",
+    "arquivo": "ficha/app-1.5.1.asar",
+    "tamanho": 69849,
+    "sha256": "b0384f9c144cab32dcf5daba83863f5502a0ada67efb3fe5a6f122defbb7e845",
     "electron": "33.2.1",
-    "notas": "Atualização automática ligada.",
-    "publicadoEm": "2026-10-21T05:27:32.132Z"
+    "notas": "Ficha impressa mais compacta: cabem até 27 itens numa folha A4 (antes eram 10).",
+    "publicadoEm": "2026-10-21T10:11:02.434Z"
   }
 }
