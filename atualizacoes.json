@@ -9,12 +9,12 @@
     "publicadoEm": "2026-10-21T10:24:13.079Z"
   },
   "ficha": {
-    "versao": "1.5.2",
-    "arquivo": "ficha/app-1.5.2.asar",
-    "tamanho": 71134,
-    "sha256": "c64f5bd6ff8744076e047b2c6ca3b78fb89a40ba143f97950f8f3f79cf8de265",
+    "versao": "1.5.3",
+    "arquivo": "ficha/app-1.5.3.asar",
+    "tamanho": 74148,
+    "sha256": "d6264c7c6925675a3ba273ffe6e3f867d423680a92fe24f92462b9bc81ef8d01",
     "electron": "33.2.1",
-    "notas": "Ficha impressa mais compacta (até 27 itens numa folha). Atualização automática corrigida.",
-    "publicadoEm": "2026-10-21T10:24:13.431Z"
+    "notas": "Cores na ficha impressa: escolha entre Azul, Verde, Vinho, Âmbar, Grafite ou Economiza tinta em Configurações.",
+    "publicadoEm": "2026-10-21T14:56:51.677Z"
   }
 }
