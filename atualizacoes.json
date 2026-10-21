@@ -1,0 +1,20 @@
+{
+  "balcao": {
+    "versao": "1.13.0",
+    "arquivo": "balcao/app-1.13.0.asar",
+    "tamanho": 4087196,
+    "sha256": "0d0579fb5bcfffa6ccf79b5c208f0016a9d594b1c81366eb7160319b9ddaa287",
+    "electron": "33.2.1",
+    "notas": "Atualização automática ligada.",
+    "publicadoEm": "2026-10-21T05:27:31.744Z"
+  },
+  "ficha": {
+    "versao": "1.5.0",
+    "arquivo": "ficha/app-1.5.0.asar",
+    "tamanho": 69588,
+    "sha256": "3bb783b2d5e6c2ed0ebed569f970b86b6bcff18f2a58521109b16abe2e4bbf1b",
+    "electron": "33.2.1",
+    "notas": "Atualização automática ligada.",
+    "publicadoEm": "2026-10-21T05:27:32.132Z"
+  }
+}
