@@ -1,20 +1,20 @@
 {
   "balcao": {
-    "versao": "1.13.0",
-    "arquivo": "balcao/app-1.13.0.asar",
-    "tamanho": 4087196,
-    "sha256": "0d0579fb5bcfffa6ccf79b5c208f0016a9d594b1c81366eb7160319b9ddaa287",
+    "versao": "1.13.1",
+    "arquivo": "balcao/app-1.13.1.asar",
+    "tamanho": 4088490,
+    "sha256": "ad93cabed325ebc2c0d9a27b2a697030fd4a446447813eac20a136962f864b4f",
     "electron": "33.2.1",
-    "notas": "Atualização automática ligada.",
-    "publicadoEm": "2026-10-21T05:27:31.744Z"
+    "notas": "Atualização automática mais segura.",
+    "publicadoEm": "2026-10-21T10:24:13.079Z"
   },
   "ficha": {
-    "versao": "1.5.1",
-    "arquivo": "ficha/app-1.5.1.asar",
-    "tamanho": 69849,
-    "sha256": "b0384f9c144cab32dcf5daba83863f5502a0ada67efb3fe5a6f122defbb7e845",
+    "versao": "1.5.2",
+    "arquivo": "ficha/app-1.5.2.asar",
+    "tamanho": 71134,
+    "sha256": "c64f5bd6ff8744076e047b2c6ca3b78fb89a40ba143f97950f8f3f79cf8de265",
     "electron": "33.2.1",
-    "notas": "Ficha impressa mais compacta: cabem até 27 itens numa folha A4 (antes eram 10).",
-    "publicadoEm": "2026-10-21T10:11:02.434Z"
+    "notas": "Ficha impressa mais compacta (até 27 itens numa folha). Atualização automática corrigida.",
+    "publicadoEm": "2026-10-21T10:24:13.431Z"
   }
 }
