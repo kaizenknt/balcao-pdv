@@ -9,12 +9,12 @@
     "publicadoEm": "2026-10-21T10:24:13.079Z"
   },
   "ficha": {
-    "versao": "1.5.3",
-    "arquivo": "ficha/app-1.5.3.asar",
-    "tamanho": 74148,
-    "sha256": "d6264c7c6925675a3ba273ffe6e3f867d423680a92fe24f92462b9bc81ef8d01",
+    "versao": "1.5.4",
+    "arquivo": "ficha/app-1.5.4.asar",
+    "tamanho": 74453,
+    "sha256": "cabb429cf6c2b336bcd3fba6271092fc5927c69a8849bdf05d87eef3273092ec",
     "electron": "33.2.1",
-    "notas": "Cores na ficha impressa: escolha entre Azul, Verde, Vinho, Âmbar, Grafite ou Economiza tinta em Configurações.",
-    "publicadoEm": "2026-10-21T14:56:51.677Z"
+    "notas": "Nas cores Azul, Verde, Vinho e Âmbar o texto da ficha impressa também sai colorido, sem gastar tinta preta.",
+    "publicadoEm": "2026-10-21T15:00:04.928Z"
   }
 }
