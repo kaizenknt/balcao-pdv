@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.17.0",
-    "arquivo": "balcao/app-1.17.0.asar",
-    "tamanho": 4290444,
-    "sha256": "4af5908de24c2512eaf00f2370fa4c805877409cf292441bb863b97d9539c610",
+    "versao": "1.17.1",
+    "arquivo": "balcao/app-1.17.1.asar",
+    "tamanho": 4293852,
+    "sha256": "ac7f762d949d90b5e7827b3142f6b1f5f3876e84f8c9779855d43c362df62190",
     "electron": "33.2.1",
-    "notas": "Visual mais limpo: menu lateral recolhido (abre ao passar o mouse, pode ser fixado), Financeiro, Notas fiscais e Ajustes divididos por assunto. Cadastro de clientes preenche nome, endereço, inscrição estadual, telefone e e-mail pelo CNPJ e o endereço pelo CEP.",
-    "publicadoEm": "2026-10-22T04:04:38.025Z"
+    "notas": "CNPJ preenche sozinho também em Ajustes (e já deixa os dados fiscais prontos); Notas fiscais busca sozinho quando o CNPJ já estava salvo; mais uma fonte de consulta de CNPJ.",
+    "publicadoEm": "2026-10-22T12:13:09.818Z"
   },
   "ficha": {
     "versao": "1.5.5",
