@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.16.0",
-    "arquivo": "balcao/app-1.16.0.asar",
-    "tamanho": 4282964,
-    "sha256": "2fbfbaa483fa4b5e69ea89591a200ecd690354a817ebbf4e9133edfc0f765222",
+    "versao": "1.17.0",
+    "arquivo": "balcao/app-1.17.0.asar",
+    "tamanho": 4290444,
+    "sha256": "4af5908de24c2512eaf00f2370fa4c805877409cf292441bb863b97d9539c610",
     "electron": "33.2.1",
-    "notas": "NF-e (notas para empresas): emissão a partir da venda ou direto no caixa, DANFE A4 com código de barras, carta de correção guiada, cancelamento, devolução ao fornecedor pelo XML da compra e inutilização de números. Clientes com endereço e IE preenchidos pelo CNPJ.",
-    "publicadoEm": "2026-10-22T03:35:53.382Z"
+    "notas": "Visual mais limpo: menu lateral recolhido (abre ao passar o mouse, pode ser fixado), Financeiro, Notas fiscais e Ajustes divididos por assunto. Cadastro de clientes preenche nome, endereço, inscrição estadual, telefone e e-mail pelo CNPJ e o endereço pelo CEP.",
+    "publicadoEm": "2026-10-22T04:04:38.025Z"
   },
   "ficha": {
     "versao": "1.5.5",
