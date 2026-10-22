@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.13.1",
-    "arquivo": "balcao/app-1.13.1.asar",
-    "tamanho": 4088490,
-    "sha256": "ad93cabed325ebc2c0d9a27b2a697030fd4a446447813eac20a136962f864b4f",
+    "versao": "1.14.0",
+    "arquivo": "balcao/app-1.14.0.asar",
+    "tamanho": 4108514,
+    "sha256": "d6db00b5ff9f9f23071aee30523725e13bf54c33a9b714482edb63aeafd08e22",
     "electron": "33.2.1",
-    "notas": "Atualização automática mais segura.",
-    "publicadoEm": "2026-10-21T10:24:13.079Z"
+    "notas": "Notas fiscais: o CNPJ busca razão social, inscrição estadual, regime e endereço na Receita; o CEP preenche o endereço e o código IBGE; a rua acha o CEP. Campos de número só aceitam números e já formatam CNPJ, CPF, CEP e telefone.",
+    "publicadoEm": "2026-10-22T02:26:24.025Z"
   },
   "ficha": {
     "versao": "1.5.5",
