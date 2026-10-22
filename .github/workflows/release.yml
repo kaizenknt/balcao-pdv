@@ -1,0 +1,29 @@
+# Publica o instalador como Release quando ele é enviado para o ramo "downloads".
+name: Publicar release
+on:
+  push:
+    branches: [downloads]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: downloads
+          lfs: false
+      - name: Criar ou atualizar a release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          for f in Balcao-PDV-Instalador-*.exe; do
+            v="${f#Balcao-PDV-Instalador-}"; v="${v%.exe}"
+            notas="$(cat "notas-$v.md" 2>/dev/null || echo "Balcão PDV $v")"
+            if gh release view "v$v" >/dev/null 2>&1; then
+              gh release upload "v$v" "$f" --clobber
+            else
+              gh release create "v$v" "$f" --title "Balcão PDV $v" --notes "$notas" --target "${GITHUB_SHA}" --latest
+            fi
+          done
