@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.18.0",
-    "arquivo": "balcao/app-1.18.0.asar",
-    "tamanho": 4310141,
-    "sha256": "dabe9f1f409462d8d62b3946d7dff22bffe72dd55dab2655eecdb387a0431fa2",
+    "versao": "1.19.0",
+    "arquivo": "balcao/app-1.19.0.asar",
+    "tamanho": 4314967,
+    "sha256": "e310638b14f01aed7aa94244c1762f7102bc12708dba1c650ccf4eccc2e6b172",
     "electron": "33.2.1",
-    "notas": "Segurança: PIN conferido no computador principal (guardado protegido), permissões por função checadas no servidor, limite de tentativas no PIN e no código de pareamento. Na primeira abertura, cada operador entra de novo com o PIN.",
-    "publicadoEm": "2026-10-22T15:55:17.404Z"
+    "notas": "Segurança: bloqueio de pedidos vindos de páginas de fora, chaves das parcerias protegidas, caixa sem poder alterar preço, venda antiga, limite de fiado ou caixa fechado, leitor só com operador, janela do app travada na tela do Balcão, troca da origem das atualizações só com confirmação, aviso de PIN fraco.",
+    "publicadoEm": "2026-10-22T16:16:22.144Z"
   },
   "ficha": {
     "versao": "1.5.5",
