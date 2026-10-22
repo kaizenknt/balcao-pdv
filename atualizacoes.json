@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.17.1",
-    "arquivo": "balcao/app-1.17.1.asar",
-    "tamanho": 4293852,
-    "sha256": "ac7f762d949d90b5e7827b3142f6b1f5f3876e84f8c9779855d43c362df62190",
+    "versao": "1.18.0",
+    "arquivo": "balcao/app-1.18.0.asar",
+    "tamanho": 4310141,
+    "sha256": "dabe9f1f409462d8d62b3946d7dff22bffe72dd55dab2655eecdb387a0431fa2",
     "electron": "33.2.1",
-    "notas": "CNPJ preenche sozinho também em Ajustes (e já deixa os dados fiscais prontos); Notas fiscais busca sozinho quando o CNPJ já estava salvo; mais uma fonte de consulta de CNPJ.",
-    "publicadoEm": "2026-10-22T12:13:09.818Z"
+    "notas": "Segurança: PIN conferido no computador principal (guardado protegido), permissões por função checadas no servidor, limite de tentativas no PIN e no código de pareamento. Na primeira abertura, cada operador entra de novo com o PIN.",
+    "publicadoEm": "2026-10-22T15:55:17.404Z"
   },
   "ficha": {
     "versao": "1.5.5",
