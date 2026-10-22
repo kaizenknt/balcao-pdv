@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.14.0",
-    "arquivo": "balcao/app-1.14.0.asar",
-    "tamanho": 4108514,
-    "sha256": "d6db00b5ff9f9f23071aee30523725e13bf54c33a9b714482edb63aeafd08e22",
+    "versao": "1.15.0",
+    "arquivo": "balcao/app-1.15.0.asar",
+    "tamanho": 4199468,
+    "sha256": "9372c4b13544412de28ba7c87050c49ddd7b702aba4a7ad57ef1d30251aa4fff",
     "electron": "33.2.1",
-    "notas": "Notas fiscais: o CNPJ busca razão social, inscrição estadual, regime e endereço na Receita; o CEP preenche o endereço e o código IBGE; a rua acha o CEP. Campos de número só aceitam números e já formatam CNPJ, CPF, CEP e telefone.",
-    "publicadoEm": "2026-10-22T02:26:24.025Z"
+    "notas": "NFC-e direto na SEFAZ-SP: certificado A1, teste de conexão, emissão automática no caixa, DANFE com QR Code, contingência sem internet, cancelamento e XMLs guardados. Gaveta: sangrias e suprimentos do dia a qualquer momento, com motivo obrigatório.",
+    "publicadoEm": "2026-10-22T03:11:54.044Z"
   },
   "ficha": {
     "versao": "1.5.5",
