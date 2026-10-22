@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.15.0",
-    "arquivo": "balcao/app-1.15.0.asar",
-    "tamanho": 4199468,
-    "sha256": "9372c4b13544412de28ba7c87050c49ddd7b702aba4a7ad57ef1d30251aa4fff",
+    "versao": "1.16.0",
+    "arquivo": "balcao/app-1.16.0.asar",
+    "tamanho": 4282964,
+    "sha256": "2fbfbaa483fa4b5e69ea89591a200ecd690354a817ebbf4e9133edfc0f765222",
     "electron": "33.2.1",
-    "notas": "NFC-e direto na SEFAZ-SP: certificado A1, teste de conexão, emissão automática no caixa, DANFE com QR Code, contingência sem internet, cancelamento e XMLs guardados. Gaveta: sangrias e suprimentos do dia a qualquer momento, com motivo obrigatório.",
-    "publicadoEm": "2026-10-22T03:11:54.044Z"
+    "notas": "NF-e (notas para empresas): emissão a partir da venda ou direto no caixa, DANFE A4 com código de barras, carta de correção guiada, cancelamento, devolução ao fornecedor pelo XML da compra e inutilização de números. Clientes com endereço e IE preenchidos pelo CNPJ.",
+    "publicadoEm": "2026-10-22T03:35:53.382Z"
   },
   "ficha": {
     "versao": "1.5.5",
