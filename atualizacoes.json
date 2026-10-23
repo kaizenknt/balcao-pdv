@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.20.0",
-    "arquivo": "balcao/app-1.20.0.asar",
-    "tamanho": 4325538,
-    "sha256": "d250d7a4e7378d2efea31dafa641533fc1615a2018000341cb25b70c04528bfd",
+    "versao": "1.21.0",
+    "arquivo": "balcao/app-1.21.0.asar",
+    "tamanho": 4341924,
+    "sha256": "d0166afbea6c928083c4f834e7bee196dab6d1412b71a3cbe2c72894c1fbd0e9",
     "electron": "33.2.1",
-    "notas": "Certificado digital: botão Procurar no computador encontra o certificado já instalado no Windows e instala no Balcão sozinho, sem arquivo nem senha.",
-    "publicadoEm": "2026-10-22T17:32:10.960Z"
+    "notas": "Site da loja: em Ajustes → Sistema, conecte o Balcão ao site. Os pedidos do site caem sozinhos na aba Pedidos (com nota fiscal, entrega e código para o cliente acompanhar) e os preços do site saem do Balcão.",
+    "publicadoEm": "2026-10-23T01:51:26.586Z"
   },
   "ficha": {
     "versao": "1.5.5",
