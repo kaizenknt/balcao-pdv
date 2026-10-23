@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.29.0",
-    "arquivo": "balcao/app-1.29.0.asar",
-    "tamanho": 4443479,
-    "sha256": "d22001a4d6c993be2fee117788ed836ff6575f1cb7da17684a9cd8ce82ae2d50",
+    "versao": "1.30.0",
+    "arquivo": "balcao/app-1.30.0.asar",
+    "tamanho": 4454688,
+    "sha256": "c3ac597edacce33a77f566243743563d3dcafd9fe5e14e94193172710e1d91b8",
     "electron": "33.2.1",
-    "notas": "Nova nota (NF-e): em Notas fiscais e em Pedidos, monte a nota com cliente e produtos; ela vai para Pedidos → Separando, você informa os pesos reais e, no caixa, a venda já vai com a NF-e marcada. Também dá para salvar como orçamento e imprimir a folha de separação.",
-    "publicadoEm": "2026-10-23T23:37:37Z"
+    "notas": "Visual: menu lateral com o nome de cada seção, loja e operador sempre à vista; caixa com bloco do cliente e NF-e sem cortes; Estoque com menus \"Importar e tabela\" e \"Dar entrada\"; avisos no canto, sem cobrir a tela; telas certas de 1024 a 1920 px.",
+    "publicadoEm": "2026-10-23T23:57:39Z"
   },
   "ficha": {
     "versao": "1.6.0",
