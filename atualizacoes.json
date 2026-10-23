@@ -9,12 +9,12 @@
     "publicadoEm": "2026-10-23T03:00:30.144Z"
   },
   "ficha": {
-    "versao": "1.5.5",
-    "arquivo": "ficha/app-1.5.5.asar",
-    "tamanho": 75461,
-    "sha256": "b98fe67ed61647a51569c50ca27fcdc1abf88283e5ff85c2a45796226e7e7be0",
+    "versao": "1.6.0",
+    "arquivo": "ficha/app-1.6.0.asar",
+    "tamanho": 79780,
+    "sha256": "364532e6b068defe2a4b1e221e5f1f0f6476db6d38994bbb54e4ecce2dba03cd",
     "electron": "33.2.1",
-    "notas": "Campo de Observação no pedido: aparece em destaque na ficha impressa e vai junto para o caixa.",
-    "publicadoEm": "2026-10-21T15:18:35.114Z"
+    "notas": "Opção de abrir junto com o Windows (fica na bandeja) e filtro de temperos: ignora boletos, Pix, notas fiscais e comprovantes copiados.",
+    "publicadoEm": "2026-10-23T10:07:43Z"
   }
 }
