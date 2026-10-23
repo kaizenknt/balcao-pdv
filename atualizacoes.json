@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.27.0",
-    "arquivo": "balcao/app-1.27.0.asar",
-    "tamanho": 4418009,
-    "sha256": "e4e8ef4d02fe93a4e4d7b248656634f516fb7de705ef3f2355d527a74393c095",
+    "versao": "1.28.0",
+    "arquivo": "balcao/app-1.28.0.asar",
+    "tamanho": 4426323,
+    "sha256": "08e03b32bd8bc9bde6205f3ab843ab31ea13478704508f81c8a76004ead341db",
     "electron": "33.2.1",
-    "notas": "Nota fiscal sem precisar de NCM em todos os produtos: NCM padrão da loja ou da categoria, e o Balcão pede o NCM na hora de emitir quando falta (com opção de salvar no cadastro).",
-    "publicadoEm": "2026-10-23T13:42:04Z"
+    "notas": "Notas fiscais com IBS/CBS (reforma tributária): grupo IBSCBS em cada item e total IBSCBSTot, automático para o Regime normal e, no Simples Nacional, a partir de 2027. Ajuste em Dados fiscais › IBS/CBS. Rejeições 1115/1119 explicadas. Total de PIS/COFINS da NF-e corrigido.",
+    "publicadoEm": "2026-10-23T14:10:09Z"
   },
   "ficha": {
     "versao": "1.6.0",
