@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.25.0",
-    "arquivo": "balcao/app-1.25.0.asar",
-    "tamanho": 4401174,
-    "sha256": "e927bca2c72505a3f74719988da5bb5a297437bb2f897602cb4b31098d261b3d",
+    "versao": "1.26.0",
+    "arquivo": "balcao/app-1.26.0.asar",
+    "tamanho": 4406803,
+    "sha256": "577c5e24f544dabd4a8f07a648cbd3a03b86be4fcff7649214fb036cd3cb6ce8",
     "electron": "33.2.1",
-    "notas": "Importar itens da balança (MGV6): traz o código da balança (PLU) e o preço do quilo do ITENSMGV.TXT, com prévia antes de gravar. Etiqueta da balança agora confere o último dígito e pode ser ajustada para 4 dígitos (Prix).",
-    "publicadoEm": "2026-10-23T12:51:10Z"
+    "notas": "Vender sem estoque contado: a venda passa mesmo com estoque zerado, o que faltou entra como \"estoque achado na venda\" (o estoque nunca fica negativo). Etiqueta e filtro \"Não contado\" no Estoque, relatório \"Estoque achado nas vendas\" e ajuste por loja para ligar/desligar.",
+    "publicadoEm": "2026-10-23T13:28:35Z"
   },
   "ficha": {
     "versao": "1.6.0",
