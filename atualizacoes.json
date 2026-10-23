@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.26.0",
-    "arquivo": "balcao/app-1.26.0.asar",
-    "tamanho": 4406803,
-    "sha256": "577c5e24f544dabd4a8f07a648cbd3a03b86be4fcff7649214fb036cd3cb6ce8",
+    "versao": "1.27.0",
+    "arquivo": "balcao/app-1.27.0.asar",
+    "tamanho": 4418009,
+    "sha256": "e4e8ef4d02fe93a4e4d7b248656634f516fb7de705ef3f2355d527a74393c095",
     "electron": "33.2.1",
-    "notas": "Vender sem estoque contado: a venda passa mesmo com estoque zerado, o que faltou entra como \"estoque achado na venda\" (o estoque nunca fica negativo). Etiqueta e filtro \"Não contado\" no Estoque, relatório \"Estoque achado nas vendas\" e ajuste por loja para ligar/desligar.",
-    "publicadoEm": "2026-10-23T13:28:35Z"
+    "notas": "Nota fiscal sem precisar de NCM em todos os produtos: NCM padrão da loja ou da categoria, e o Balcão pede o NCM na hora de emitir quando falta (com opção de salvar no cadastro).",
+    "publicadoEm": "2026-10-23T13:42:04Z"
   },
   "ficha": {
     "versao": "1.6.0",
