@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.28.0",
-    "arquivo": "balcao/app-1.28.0.asar",
-    "tamanho": 4426323,
-    "sha256": "08e03b32bd8bc9bde6205f3ab843ab31ea13478704508f81c8a76004ead341db",
+    "versao": "1.28.1",
+    "arquivo": "balcao/app-1.28.1.asar",
+    "tamanho": 4426311,
+    "sha256": "a6e75bff9c8c8ef51f7179ffca887d7555d4adefa8b965417a5586a2ddbc91de",
     "electron": "33.2.1",
-    "notas": "Notas fiscais com IBS/CBS (reforma tributária): grupo IBSCBS em cada item e total IBSCBSTot, automático para o Regime normal e, no Simples Nacional, a partir de 2027. Ajuste em Dados fiscais › IBS/CBS. Rejeições 1115/1119 explicadas. Total de PIS/COFINS da NF-e corrigido.",
-    "publicadoEm": "2026-10-23T14:10:09Z"
+    "notas": "Corrige a rejeição 963 da SEFAZ: pagamento em Pix não leva mais o grupo de cartão na nota.",
+    "publicadoEm": "2026-10-23T14:21:08Z"
   },
   "ficha": {
     "versao": "1.6.0",
