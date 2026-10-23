@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.28.1",
-    "arquivo": "balcao/app-1.28.1.asar",
-    "tamanho": 4426311,
-    "sha256": "a6e75bff9c8c8ef51f7179ffca887d7555d4adefa8b965417a5586a2ddbc91de",
+    "versao": "1.29.0",
+    "arquivo": "balcao/app-1.29.0.asar",
+    "tamanho": 4443479,
+    "sha256": "d22001a4d6c993be2fee117788ed836ff6575f1cb7da17684a9cd8ce82ae2d50",
     "electron": "33.2.1",
-    "notas": "Corrige a rejeição 963 da SEFAZ: pagamento em Pix não leva mais o grupo de cartão na nota.",
-    "publicadoEm": "2026-10-23T14:21:08Z"
+    "notas": "Nova nota (NF-e): em Notas fiscais e em Pedidos, monte a nota com cliente e produtos; ela vai para Pedidos → Separando, você informa os pesos reais e, no caixa, a venda já vai com a NF-e marcada. Também dá para salvar como orçamento e imprimir a folha de separação.",
+    "publicadoEm": "2026-10-23T23:37:37Z"
   },
   "ficha": {
     "versao": "1.6.0",
