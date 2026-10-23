@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.24.0",
-    "arquivo": "balcao/app-1.24.0.asar",
-    "tamanho": 4374053,
-    "sha256": "4f7d53c6934f59d85090df2af8d0f4f752ad01a8be13ec6e3ba8b9fdf273d6f3",
+    "versao": "1.25.0",
+    "arquivo": "balcao/app-1.25.0.asar",
+    "tamanho": 4401174,
+    "sha256": "e927bca2c72505a3f74719988da5bb5a297437bb2f897602cb4b31098d261b3d",
     "electron": "33.2.1",
-    "notas": "Novo: Importar tabela de preços (XML) no Estoque. Mostra uma prévia com novos, alterados, sem preço e conflitos antes de gravar; muda só nome, unidade, preço, atacado e ativo (estoque e custo ficam como estão).",
-    "publicadoEm": "2026-10-23T12:20:05Z"
+    "notas": "Importar itens da balança (MGV6): traz o código da balança (PLU) e o preço do quilo do ITENSMGV.TXT, com prévia antes de gravar. Etiqueta da balança agora confere o último dígito e pode ser ajustada para 4 dígitos (Prix).",
+    "publicadoEm": "2026-10-23T12:51:10Z"
   },
   "ficha": {
     "versao": "1.6.0",
