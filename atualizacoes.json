@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.22.0",
-    "arquivo": "balcao/app-1.22.0.asar",
-    "tamanho": 4350506,
-    "sha256": "78dbc8fcd6b3f12ee48d5c4c8757f2633f2149bdc17011547f40ec038c648d09",
+    "versao": "1.23.0",
+    "arquivo": "balcao/app-1.23.0.asar",
+    "tamanho": 4351299,
+    "sha256": "7823e82c84ecfc21008a6551967099b2904f1b50d293d07ed18430e39b998fb2",
     "electron": "33.2.1",
-    "notas": "Site da loja: preço de atacado (fardo fechado sempre no atacado), 5% de desconto no Pix ou dinheiro acima de R$ 100 e tamanho do fardo por produto. O pedido do site chega ao caixa com o atacado, a forma de pagamento e o desconto já lançados.",
-    "publicadoEm": "2026-10-23T02:39:01.386Z"
+    "notas": "Site da loja: as conservas usam o peso drenado; ao ligar produtos, o Balcão reconhece o produto também pelo peso do rótulo e mostra o pote de cada tamanho.",
+    "publicadoEm": "2026-10-23T03:00:30.144Z"
   },
   "ficha": {
     "versao": "1.5.5",
