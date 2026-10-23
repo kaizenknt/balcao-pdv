@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.23.0",
-    "arquivo": "balcao/app-1.23.0.asar",
-    "tamanho": 4351299,
-    "sha256": "7823e82c84ecfc21008a6551967099b2904f1b50d293d07ed18430e39b998fb2",
+    "versao": "1.24.0",
+    "arquivo": "balcao/app-1.24.0.asar",
+    "tamanho": 4374053,
+    "sha256": "4f7d53c6934f59d85090df2af8d0f4f752ad01a8be13ec6e3ba8b9fdf273d6f3",
     "electron": "33.2.1",
-    "notas": "Site da loja: as conservas usam o peso drenado; ao ligar produtos, o Balcão reconhece o produto também pelo peso do rótulo e mostra o pote de cada tamanho.",
-    "publicadoEm": "2026-10-23T03:00:30.144Z"
+    "notas": "Novo: Importar tabela de preços (XML) no Estoque. Mostra uma prévia com novos, alterados, sem preço e conflitos antes de gravar; muda só nome, unidade, preço, atacado e ativo (estoque e custo ficam como estão).",
+    "publicadoEm": "2026-10-23T12:20:05Z"
   },
   "ficha": {
     "versao": "1.6.0",
