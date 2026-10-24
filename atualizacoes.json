@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.30.1",
-    "arquivo": "balcao/app-1.30.1.asar",
-    "tamanho": 4454782,
-    "sha256": "738a3ba089c0d09853ce73c55f4ae1c5522fe1ae20b2bbdc0303d2cb1cd6046d",
+    "versao": "1.31.0",
+    "arquivo": "balcao/app-1.31.0.asar",
+    "tamanho": 4484607,
+    "sha256": "b92313c5de8daa0b2c2cf327207ef502a8c4a0a4edb5c08d98233d178d0de667",
     "electron": "33.2.1",
-    "notas": "Ao adicionar um produto pelo catálogo (F3), o catálogo fecha e volta para a venda.",
-    "publicadoEm": "2026-10-24T00:49:51Z"
+    "notas": "Importar clientes de planilha (CSV ou Excel) com prévia antes de gravar. Dados fiscais com nome fantasia e telefone. Crédito de ICMS do Simples na NF-e para empresas contribuintes. Fiado com juros e multa opcionais, mostrando o valor atualizado das contas vencidas.",
+    "publicadoEm": "2026-10-24T15:02:44Z"
   },
   "ficha": {
     "versao": "1.6.0",
