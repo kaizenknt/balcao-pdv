@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.30.0",
-    "arquivo": "balcao/app-1.30.0.asar",
-    "tamanho": 4454688,
-    "sha256": "c3ac597edacce33a77f566243743563d3dcafd9fe5e14e94193172710e1d91b8",
+    "versao": "1.30.1",
+    "arquivo": "balcao/app-1.30.1.asar",
+    "tamanho": 4454782,
+    "sha256": "738a3ba089c0d09853ce73c55f4ae1c5522fe1ae20b2bbdc0303d2cb1cd6046d",
     "electron": "33.2.1",
-    "notas": "Visual: menu lateral com o nome de cada seção, loja e operador sempre à vista; caixa com bloco do cliente e NF-e sem cortes; Estoque com menus \"Importar e tabela\" e \"Dar entrada\"; avisos no canto, sem cobrir a tela; telas certas de 1024 a 1920 px.",
-    "publicadoEm": "2026-10-23T23:57:39Z"
+    "notas": "Ao adicionar um produto pelo catálogo (F3), o catálogo fecha e volta para a venda.",
+    "publicadoEm": "2026-10-24T00:49:51Z"
   },
   "ficha": {
     "versao": "1.6.0",
