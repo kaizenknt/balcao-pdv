@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.31.1",
-    "arquivo": "balcao/app-1.31.1.asar",
-    "tamanho": 4516232,
-    "sha256": "67cb2fa5ada2106e9a16735b054a39276b4eafebbd7dfc8fa5bbc2013b6d9d8c",
+    "versao": "1.31.2",
+    "arquivo": "balcao/app-1.31.2.asar",
+    "tamanho": 4521093,
+    "sha256": "fe70c9cfd40a8a6792c2cee89abdbbe7ef1aa82fb1370dcc372aa3fca938e44a",
     "electron": "33.2.1",
-    "notas": "No caixa, F8 altera o preço de um item só nesta venda (o caixa precisa do PIN do dono ou gerente). Categorias com NCM, CEST e CSOSN, e regras pelo nome do produto para preencher a categoria e o NCM sozinho. A importação da tabela de preços avisa quando um preço parece errado. O leitor acha o produto mesmo com zero a mais na frente, pelo código de barras ou pelo código antigo, e oferece cadastrar o código que não existe.",
-    "publicadoEm": "2026-10-24T15:21:12Z"
+    "notas": "Cupom não fiscal refeito para a impressora térmica: nenhuma linha passa da largura do papel, valores alinhados à direita na mesma linha, cabeçalho com nome fantasia, razão social, CNPJ, IE e endereço, e itens com quantidade, preço e total. Em Ajustes, na impressora, dá para escolher os caracteres por linha (32, 42 ou 48) e imprimir um teste de largura.",
+    "publicadoEm": "2026-10-24T15:33:02Z"
   },
   "ficha": {
     "versao": "1.6.0",
