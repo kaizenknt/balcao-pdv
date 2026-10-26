@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.32.1",
-    "arquivo": "balcao/app-1.32.1.asar",
-    "tamanho": 4559284,
-    "sha256": "eeb04f994f6bbb5e5f77c02a90e1c186070ca3434c19faec87304059c629ae1e",
+    "versao": "1.32.2",
+    "arquivo": "balcao/app-1.32.2.asar",
+    "tamanho": 4573371,
+    "sha256": "8dd8771f9d32e476db9b6613c5658cdadeb8d8cf818a5dae2d1d049b7b615558",
     "electron": "33.2.1",
-    "notas": "A Nova nota e a NF-e agora ficam guardadas como rascunho enquanto você preenche: dá para ir ao caixa, fechar a janela ou até reiniciar o Balcão e continuar depois de onde parou. Um aviso \"Nota em andamento\" no alto da tela volta para a nota com um clique. O rascunho é apagado quando a nota é enviada ou autorizada, ou quando você descarta.",
-    "publicadoEm": "2026-10-26T04:52:34Z"
+    "notas": "Pedidos da Ficha de Pesagem e do WhatsApp acham melhor o produto: item pedido por peso só vai para produto vendido por quilo (nunca mais peso em frasco ou pacote), marca e tamanho de embalagem no nome contam contra, e \"pim.\", \"temp.\", \"c/\" e \"s/\" são entendidos. Quando você troca o produto de uma linha e confirma, o Balcão lembra para a próxima vez. Cada linha mostra a confiança e se o produto é vendido por quilo ou por unidade; as duvidosas ficam em amarelo. Em Ajustes, \"Nomes nos pedidos\" lista e permite cadastrar esses nomes.",
+    "publicadoEm": "2026-10-26T10:02:26Z"
   },
   "ficha": {
     "versao": "1.6.0",
