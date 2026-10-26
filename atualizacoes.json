@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.32.0",
-    "arquivo": "balcao/app-1.32.0.asar",
-    "tamanho": 4552601,
-    "sha256": "17d5e668ff3417c9ae8edb8449b9947418d41cb70a098c422aa93c73c6a9303b",
+    "versao": "1.32.1",
+    "arquivo": "balcao/app-1.32.1.asar",
+    "tamanho": 4559284,
+    "sha256": "eeb04f994f6bbb5e5f77c02a90e1c186070ca3434c19faec87304059c629ae1e",
     "electron": "33.2.1",
-    "notas": "Tabela NCM oficial do Siscomex: o Balcão baixa e guarda a tabela (atualiza sozinho a cada 30 dias e funciona sem internet), mostra a descrição oficial do NCM no produto e nas categorias, avisa quando um NCM não existe e não deixa emitir nota com ele. Novo \"Buscar NCM\" por palavras e \"Sugerir NCM pela tabela oficial\" para os produtos sem NCM, com prévia para conferir. Corrigido o NCM sugerido para erva-doce, funcho e anis-estrelado.",
-    "publicadoEm": "2026-10-24T23:41:51Z"
+    "notas": "A Nova nota e a NF-e agora ficam guardadas como rascunho enquanto você preenche: dá para ir ao caixa, fechar a janela ou até reiniciar o Balcão e continuar depois de onde parou. Um aviso \"Nota em andamento\" no alto da tela volta para a nota com um clique. O rascunho é apagado quando a nota é enviada ou autorizada, ou quando você descarta.",
+    "publicadoEm": "2026-10-26T04:52:34Z"
   },
   "ficha": {
     "versao": "1.6.0",
