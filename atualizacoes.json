@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.32.2",
-    "arquivo": "balcao/app-1.32.2.asar",
-    "tamanho": 4573371,
-    "sha256": "8dd8771f9d32e476db9b6613c5658cdadeb8d8cf818a5dae2d1d049b7b615558",
+    "versao": "1.32.3",
+    "arquivo": "balcao/app-1.32.3.asar",
+    "tamanho": 4579831,
+    "sha256": "039ec641e554c3417f0248b42789d9d58198fe900aa42bc76c1e3be6afab68e5",
     "electron": "33.2.1",
-    "notas": "Pedidos da Ficha de Pesagem e do WhatsApp acham melhor o produto: item pedido por peso só vai para produto vendido por quilo (nunca mais peso em frasco ou pacote), marca e tamanho de embalagem no nome contam contra, e \"pim.\", \"temp.\", \"c/\" e \"s/\" são entendidos. Quando você troca o produto de uma linha e confirma, o Balcão lembra para a próxima vez. Cada linha mostra a confiança e se o produto é vendido por quilo ou por unidade; as duvidosas ficam em amarelo. Em Ajustes, \"Nomes nos pedidos\" lista e permite cadastrar esses nomes.",
-    "publicadoEm": "2026-10-26T10:02:26Z"
+    "notas": "Ligar produtos ao site: as sugestões automáticas acham muito mais produtos (marca no nome, tamanho escrito de outro jeito, \"em pó\" e \"moído\", acentos e abreviações). Cada campo mostra a confiança da sugestão; \"Preencher com sugestões\" usa as de confiança alta e média, o novo botão \"Só as de alta confiança\" usa só as mais certas, e as parecidas aparecem embaixo do campo para você escolher. Nada é salvo sem você clicar em Salvar ligações. A leitura dos pedidos também ficou mais rápida.",
+    "publicadoEm": "2026-10-26T16:17:16Z"
   },
   "ficha": {
     "versao": "1.6.2",
