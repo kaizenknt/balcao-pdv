@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.32.3",
-    "arquivo": "balcao/app-1.32.3.asar",
-    "tamanho": 4579831,
-    "sha256": "039ec641e554c3417f0248b42789d9d58198fe900aa42bc76c1e3be6afab68e5",
+    "versao": "1.33.0",
+    "arquivo": "balcao/app-1.33.0.asar",
+    "tamanho": 4666496,
+    "sha256": "8f15235af4bb8513a4a94385c1c3d1056d7a43b04b42964c69cb984ca62453c8",
     "electron": "33.2.1",
-    "notas": "Ligar produtos ao site: as sugestões automáticas acham muito mais produtos (marca no nome, tamanho escrito de outro jeito, \"em pó\" e \"moído\", acentos e abreviações). Cada campo mostra a confiança da sugestão; \"Preencher com sugestões\" usa as de confiança alta e média, o novo botão \"Só as de alta confiança\" usa só as mais certas, e as parecidas aparecem embaixo do campo para você escolher. Nada é salvo sem você clicar em Salvar ligações. A leitura dos pedidos também ficou mais rápida.",
-    "publicadoEm": "2026-10-26T16:17:16Z"
+    "notas": "Notas de entrada automáticas: as notas que os fornecedores emitem para o CNPJ da loja aparecem sozinhas em Estoque › Dar entrada › Notas recebidas (é preciso o certificado digital A1 da loja). A busca só lista: nada muda no estoque e nada é informado à SEFAZ. Quando a mercadoria chegar, clique em \"Dar entrada\" e faça a conferência item por item (pode ler os códigos de barras com o leitor ou com o celular, e pode parar e continuar depois). O estoque só muda em \"Confirmar entrada\", com as quantidades que chegaram; se faltou ou sobrou algo, o Balcão mostra as diferenças antes. A mesma nota não entra duas vezes. No celular, em Leitor, dá para ler o código de barras da nota (DANFE) ou digitar a chave. O Balcão também lembra o código de cada produto do fornecedor e quantas unidades vêm na caixa.",
+    "publicadoEm": "2026-10-27T00:06:18Z"
   },
   "ficha": {
     "versao": "1.6.2",
