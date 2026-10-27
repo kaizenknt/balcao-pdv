@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.6",
-    "arquivo": "balcao/app-1.33.6.asar",
-    "tamanho": 5060471,
-    "sha256": "01d50d066285b606a31c8fc782ee93960dd8d723fcfd82b8fa34485e001fc452",
+    "versao": "1.33.7",
+    "arquivo": "balcao/app-1.33.7.asar",
+    "tamanho": 5064735,
+    "sha256": "1b6d92297d7e0f52c9651decdb1fed095ea70bbfac502d81807579cfc9525108",
     "electron": "33.2.1",
-    "notas": "Relatório detalhado do fechamento de caixa: ao fechar o caixa aparece o relatório completo, com o resumo do dia, as formas de pagamento, a conta da gaveta, tudo o que saiu do estoque (cada produto com quantidade, valor e, para o dono e o gerente, custo e margem), separado em vendido no caixa e pedidos entregues, totais por categoria, perdas, ajustes de estoque, vendas canceladas, preços alterados no caixa, fiado do dia, notas fiscais e alertas (estoque abaixo do mínimo, desconto alto). Dá para imprimir na impressora do caixa, salvar em PDF ou exportar planilha. Em Financeiro › Fechamentos de caixa, clique num fechamento para ver de novo, ou em \"Relatório do dia\" para juntar todos os caixas do dia. No formulário de fechar há \"Ver relatório completo\" antes de confirmar. Os ajustes de estoque feitos no cadastro do produto agora ficam registrados.",
-    "publicadoEm": "2026-10-27T17:19:36Z"
+    "notas": "Desconto automático no caixa: quando ligado, compras a partir de R$ 100 pagas só no Pix ou dinheiro ganham 5% de desconto na hora (o mesmo percentual e valor mínimo do site). Trocar para cartão tira o desconto sozinho, e o operador pode tirar numa venda. Não soma com desconto digitado nem com pedido do site, que já vem com o desconto. Sai no cupom como \"Desconto Pix/dinheiro (5%)\", na nota fiscal e no relatório do fechamento. Para ligar: Ajustes › Loja › Desconto automático no caixa (vale só para a loja escolhida; começa desligado).",
+    "publicadoEm": "2026-10-27T17:36:42Z"
   },
   "ficha": {
     "versao": "1.6.2",
