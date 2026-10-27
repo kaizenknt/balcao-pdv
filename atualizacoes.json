@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.2",
-    "arquivo": "balcao/app-1.33.2.asar",
-    "tamanho": 4676071,
-    "sha256": "408a6fc7cb3e4b60d326857d0d9a6841412b5ea2ee651d3bc17ab6c804b0067e",
+    "versao": "1.33.3",
+    "arquivo": "balcao/app-1.33.3.asar",
+    "tamanho": 5020446,
+    "sha256": "5c8a1fe69a91fa1a3ec2cef4d8e24f3f7d36ad85b82b2367a7768c9e9937aa6c",
     "electron": "33.2.1",
-    "notas": "Entrada de notas pelo celular: em Leitor › Nota do fornecedor há \"Abrir arquivo XML\" (o XML que chegou no WhatsApp, e-mail ou Arquivos). A nota fica guardada no Balcão, e depois ler o código de barras da DANFE acha a nota aqui mesmo, sem consultar a SEFAZ. A conferência ficou mais fácil no celular (um cartão por item) e a câmera do celular marca ou conta cada produto. Nota de teste (homologação) aparece com o aviso NOTA DE TESTE, nunca é informada à SEFAZ, e depois de confirmar dá para \"Desfazer esta entrada de teste\". Inclui a correção da 1.33.1: o aviso de juros vai para a NF-e a prazo (Notas fiscais › Configuração › Cobrança a prazo) e saiu do fiado.",
-    "publicadoEm": "2026-10-27T03:46:08Z"
+    "notas": "Leitura do código de barras da nota (DANFE) pelo celular: a câmera agora lê a imagem inteira em alta resolução (não só um quadradinho no meio), pode virar o celular deitado, tem zoom e lanterna quando o celular oferece, e insiste mais até ler. Corrigido um defeito do leitor que impedia ler o código de barras longo da DANFE. A foto do código também é lida em resolução cheia, em pé ou deitada. Se não ler, chegue mais perto ou use o zoom: o código de barras deve ocupar boa parte da largura da tela.",
+    "publicadoEm": "2026-10-27T04:17:26Z"
   },
   "ficha": {
     "versao": "1.6.2",
