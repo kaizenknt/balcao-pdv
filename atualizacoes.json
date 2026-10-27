@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.7",
-    "arquivo": "balcao/app-1.33.7.asar",
-    "tamanho": 5064735,
-    "sha256": "1b6d92297d7e0f52c9651decdb1fed095ea70bbfac502d81807579cfc9525108",
+    "versao": "1.33.8",
+    "arquivo": "balcao/app-1.33.8.asar",
+    "tamanho": 5070433,
+    "sha256": "49d7c9ef9c209c4af4a75e58be109987ae8716dfcfe83f74921c4f8d61a9ffd6",
     "electron": "33.2.1",
-    "notas": "Desconto automático no caixa: quando ligado, compras a partir de R$ 100 pagas só no Pix ou dinheiro ganham 5% de desconto na hora (o mesmo percentual e valor mínimo do site). Trocar para cartão tira o desconto sozinho, e o operador pode tirar numa venda. Não soma com desconto digitado nem com pedido do site, que já vem com o desconto. Sai no cupom como \"Desconto Pix/dinheiro (5%)\", na nota fiscal e no relatório do fechamento. Para ligar: Ajustes › Loja › Desconto automático no caixa (vale só para a loja escolhida; começa desligado).",
-    "publicadoEm": "2026-10-27T17:36:42Z"
+    "notas": "Notas recebidas: o Balcão não consulta mais a SEFAZ sozinho. A busca só acontece quando você clica em \"Buscar notas na SEFAZ\" (ou lê/digita uma chave). Se clicar cedo demais, o Balcão não consulta e mostra a hora em que a SEFAZ libera a nova busca, para não bloquear o CNPJ. Depois de \"Dar entrada\", ele tenta baixar a nota completa por no máximo 2 minutos, com botão para cancelar. Ligação com o site: quando não consegue falar com o site, a mensagem agora diz o motivo (domínio ainda não ativo, certificado, bloqueio da Cloudflare, rota errada, configuração do site) e mostra os detalhes técnicos embaixo. O endereço pode ser escrito sem https:// e com ou sem www.",
+    "publicadoEm": "2026-10-27T18:00:17Z"
   },
   "ficha": {
     "versao": "1.6.2",
