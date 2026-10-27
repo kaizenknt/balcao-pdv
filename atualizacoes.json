@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.5",
-    "arquivo": "balcao/app-1.33.5.asar",
-    "tamanho": 5031990,
-    "sha256": "825beb21c657b467ba1f6fcfaf88dbc58b73d955ff5519107b7a60c31ab5ec5b",
+    "versao": "1.33.6",
+    "arquivo": "balcao/app-1.33.6.asar",
+    "tamanho": 5060471,
+    "sha256": "01d50d066285b606a31c8fc782ee93960dd8d723fcfd82b8fa34485e001fc452",
     "electron": "33.2.1",
-    "notas": "Leitor de código de barras no caixa: não precisa mais apertar F2 nem clicar na busca. Com a tela do caixa aberta, passe o código e o produto entra na hora (com o bipe). Se você começar a digitar um nome, o Balcão leva para a busca. O leitor ficou mais esperto: aceita teclado numérico, prefixos de alguns leitores, códigos GS1 (01 + GTIN), ignora leitura repetida sem querer e avisa \"leitura falhou, passe de novo\" quando o código chega errado. A conferência de nota e a consulta de preço também recebem a leitura sem clicar no campo. Para conferir a configuração do leitor: Ajustes › Caixa e aparelhos › Testar leitor de código de barras. Inclui o bipe da 1.33.4.",
-    "publicadoEm": "2026-10-27T17:04:56Z"
+    "notas": "Relatório detalhado do fechamento de caixa: ao fechar o caixa aparece o relatório completo, com o resumo do dia, as formas de pagamento, a conta da gaveta, tudo o que saiu do estoque (cada produto com quantidade, valor e, para o dono e o gerente, custo e margem), separado em vendido no caixa e pedidos entregues, totais por categoria, perdas, ajustes de estoque, vendas canceladas, preços alterados no caixa, fiado do dia, notas fiscais e alertas (estoque abaixo do mínimo, desconto alto). Dá para imprimir na impressora do caixa, salvar em PDF ou exportar planilha. Em Financeiro › Fechamentos de caixa, clique num fechamento para ver de novo, ou em \"Relatório do dia\" para juntar todos os caixas do dia. No formulário de fechar há \"Ver relatório completo\" antes de confirmar. Os ajustes de estoque feitos no cadastro do produto agora ficam registrados.",
+    "publicadoEm": "2026-10-27T17:19:36Z"
   },
   "ficha": {
     "versao": "1.6.2",
