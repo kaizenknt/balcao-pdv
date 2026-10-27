@@ -1,0 +1,4594 @@
+{
+ "sobre": "Linhas de pedido rotuladas para medir o reconhecimento de produtos (lista real da D'Lu). e = produtos aceitos (nomes iguais com \"(cód ...)\" contam como o mesmo); e null = não está na lista, o certo é não casar; amb = a linha é ambígua de verdade, o certo é perguntar (certeza alta conta à parte como \"ambígua com certeza\"). Regra dos rótulos: se um produto tem o mesmo nome da linha (sem contar tamanho, embalagem e palavras genéricas como tempero/pimenta), é ele; ctx ficha = pesagem (granel), balcao = pedido/venda por unidade.",
+ "casos": [
+  {
+   "t": "1kg de cominho",
+   "e": [
+    "COMINHO 100% FORTALEZA",
+    "COMINHO EM PÓ PREMIUM",
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "cominho 500g",
+   "e": [
+    "COMINHO 100% FORTALEZA",
+    "COMINHO EM PÓ PREMIUM",
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "Cominho - 250 gramas",
+   "e": [
+    "COMINHO 100% FORTALEZA",
+    "COMINHO EM PÓ PREMIUM",
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "cominho em grao 250g",
+   "e": [
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "comino grão 1 kg",
+   "e": [
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "COMINHO GRÃO 99% 1KG",
+   "e": [
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cominho com pimenta 300g",
+   "e": [
+    "COMINHO C/ PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cominho c/ pim 500gr",
+   "e": [
+    "COMINHO C/ PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cominho premium meio kilo",
+   "e": [
+    "COMINHO EM PÓ PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cominho fortaleza 1kg",
+   "e": [
+    "COMINHO 100% FORTALEZA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cominho em po 200g",
+   "e": [
+    "COMINHO EM PÓ PREMIUM",
+    "COMINHO 100% FORTALEZA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "jomil cominho",
+   "e": [
+    "COMINHO CONDIMENTADO 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cominho jomil 500g",
+   "e": [
+    "COMINHO CONDIMENTADO 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "cominho penina",
+   "e": [
+    "COMINHO 500G PENINA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pct cominho grao 1kg",
+   "e": [
+    "COMINHO GRÃO 99% PCT 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "cominho grao 2kg pacote",
+   "e": [
+    "COMINHO GRÃO 2KG 99% PCT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta do reino 1kg",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pim do reino 500g",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta reino 250 g",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do rino 300g",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta-do-reino 1 quilo",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "Pimenta do Reino 100gr",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino moida 1kg",
+   "e": [
+    "PIMENTA DO REINO MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino moída premium 500g",
+   "e": [
+    "PIMENTA DO REINO MOÍDA PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "reino branca 100g",
+   "e": [
+    "PIMENTA DO REINO BRANCA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta branca 200g",
+   "e": [
+    "PIMENTA BRANCA",
+    "PIMENTA DO REINO BRANCA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta preta em grao 500g",
+   "e": [
+    "PIMENTA PRETA GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino em grão 1kg",
+   "e": [
+    "PIMENTA PRETA GRÃO",
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino penina",
+   "e": [
+    "PIMENTA DO REINO PENINA 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pimenta do reino jomil",
+   "e": [
+    "PIMENTA DO REINO CONDIMENTADA JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta reino verde",
+   "e": [
+    "PIMENTA DO REINO VERDE 270G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "calabresa 500g",
+   "e": [
+    "PIMENTA CALABRESA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta calabresa 1kg",
+   "e": [
+    "PIMENTA CALABRESA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "Pimenta Calabresa - 500g",
+   "e": [
+    "PIMENTA CALABRESA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimentas calabresas 250g",
+   "e": [
+    "PIMENTA CALABRESA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "calabresa moida premium 250g",
+   "e": [
+    "PIMENTA CALABRESA MOÍDA PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta caiena 100gr",
+   "e": [
+    "PIMENTA CAIENA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caiena 200 g",
+   "e": [
+    "PIMENTA CAIENA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta cayenne 300g",
+   "e": [
+    "PIMENTA CAIENA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta rosa 100g",
+   "e": [
+    "PIMENTA ROSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta jamaica 100g",
+   "e": [
+    "PIMENTA JAMAICA GRÃO",
+    "PIMENTA JAMAICA MOÍDA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "pimenta jamaica moida 250g",
+   "e": [
+    "PIMENTA JAMAICA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "malagueta moida 250g",
+   "e": [
+    "PIMENTA MALAGUETA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta malagueta 1kg",
+   "e": [
+    "PIMENTA MALAGUETA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "1 pimenta siria",
+   "e": [
+    "PIMENTA SÍRIA CONDIMENTADA 500 G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta síria 200g",
+   "e": null,
+   "ctx": "ficha",
+   "nota": "só existe em pacote (un)"
+  },
+  {
+   "t": "pimenta artesanal 250g",
+   "e": [
+    "PIMENTA ARTESANAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chipotle 100g",
+   "e": [
+    "CHIPOTLE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica defumada 500g",
+   "e": [
+    "PAPRICA DEFUMADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "páprica doce 1kg",
+   "e": [
+    "PAPRICA DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "papirca defumada 250g",
+   "e": [
+    "PAPRICA DEFUMADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprika picante 200g",
+   "e": [
+    "PAPRICA PICANTE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica defumada premium 1kg",
+   "e": [
+    "PAPRICA DEFUMADA PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica 500g",
+   "e": [
+    "PAPRICA DEFUMADA",
+    "PAPRICA DOCE",
+    "PAPRICA PICANTE",
+    "PAPRICA DEFUMADA PREMIUM",
+    "PAPRICA PICANTE PREMIUM",
+    "PAPRICA DOCE LIMÃO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "papríca doce com limão 250g",
+   "e": [
+    "PAPRICA DOCE LIMÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica picante premium 300g",
+   "e": [
+    "PAPRICA PICANTE PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pápricas defumadas 1 kg",
+   "e": [
+    "PAPRICA DEFUMADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "250 gramas de páprica doce",
+   "e": [
+    "PAPRICA DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "acafrao 500g",
+   "e": [
+    "AÇAFRÃO ESPECIAL",
+    "AÇAFRÃO PURO",
+    "AÇAFRÃO TEMPERADO",
+    "CÚRCUMA MOÍDA",
+    "CÚRCUMA PÓ PURA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "açafrão puro 1kg",
+   "e": [
+    "AÇAFRÃO PURO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "acafrao temperado 250g",
+   "e": [
+    "AÇAFRÃO TEMPERADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "açafrão especial 500g",
+   "e": [
+    "AÇAFRÃO ESPECIAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "acafrão da terra 250g",
+   "e": [
+    "CÚRCUMA MOÍDA",
+    "CÚRCUMA PÓ PURA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "curcuma 1kg",
+   "e": [
+    "CÚRCUMA MOÍDA",
+    "CÚRCUMA PÓ PURA",
+    "CÚRCUMA RAIZ"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "cúrcuma moída 500g",
+   "e": [
+    "CÚRCUMA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curcuma raiz 200g",
+   "e": [
+    "CÚRCUMA RAIZ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curcuma po pura 300g",
+   "e": [
+    "CÚRCUMA PÓ PURA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "açafrao puro meio quilo",
+   "e": [
+    "AÇAFRÃO PURO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau 1kg",
+   "e": [
+    "COLORAL CASEIRO",
+    "COLORAL DEFUMADO",
+    "COLORAL EXTRA FORTE",
+    "COLORAL MOLHADO",
+    "COLORAL PARAÍBA",
+    "COLORAL TEMPERADO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "colorifico 1kg",
+   "e": [
+    "COLORAL CASEIRO",
+    "COLORAL DEFUMADO",
+    "COLORAL EXTRA FORTE",
+    "COLORAL MOLHADO",
+    "COLORAL PARAÍBA",
+    "COLORAL TEMPERADO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "urucum 500g",
+   "e": [
+    "COLORAL CASEIRO",
+    "COLORAL DEFUMADO",
+    "COLORAL EXTRA FORTE",
+    "COLORAL MOLHADO",
+    "COLORAL PARAÍBA",
+    "COLORAL TEMPERADO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "colorau paraiba 500g",
+   "e": [
+    "COLORAL PARAÍBA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coloral defumado 250g",
+   "e": [
+    "COLORAL DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau extra forte 1 kg",
+   "e": [
+    "COLORAL EXTRA FORTE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorífico caseiro 500g",
+   "e": [
+    "COLORAL CASEIRO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau temperado 300g",
+   "e": [
+    "COLORAL TEMPERADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau molhado 1kg",
+   "e": [
+    "COLORAL MOLHADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau jomil",
+   "e": [
+    "COLORAL JOMIL 500G",
+    "COLORÍFICO JOMIL",
+    "COLORÍFICO JOMIL 100G"
+   ],
+   "ctx": "balcao",
+   "amb": true
+  },
+  {
+   "t": "colorifico penina 1kg",
+   "e": [
+    "COLORÍFICO PENINA 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 colorau paraiba 1kg",
+   "e": [
+    "COLORAL PARAÍBA 1KG",
+    "COLORAL PARAÍBA 1 KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "colorau paraíba 5kg",
+   "e": [
+    "COLORAL PARAÍBA 5KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "lemon 500g",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon pepper 1kg",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon peper 250g",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "limon pepper 100g",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "1/2 kg de lemon pepper",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemom pepper defumado 500g",
+   "e": [
+    "LEMON PEPPER DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon pepper fit 200g",
+   "e": [
+    "LEMON PEPPER FIT"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon herbs 300g",
+   "e": [
+    "LEMON HERBS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon pepper jomil",
+   "e": [
+    "LEMON PEPPER JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "lemon pepper capsum",
+   "e": [
+    "LEMON PEPPERS CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 lemon pepper 500g",
+   "e": [
+    "LEMON PEPPER 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "orange pepper 250g",
+   "e": [
+    "ORANGE PEPPER"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ana maria 500",
+   "e": [
+    "TEMPERO ANA MARIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero ana maria 1kg",
+   "e": [
+    "TEMPERO ANA MARIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ana maria carne 500g",
+   "e": [
+    "ANA MARIA SABOR CARNE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero ana maria dlu",
+   "e": [
+    "TEMPERO ANA MARIA 500G DLU",
+    "ANA MARIA 500 G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "edu guedes 500g",
+   "e": [
+    "TEMPERO EDU GUEDES"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero edu guedes carne 1kg",
+   "e": [
+    "TEMPERO EDU GUEDES (CARNE)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero do chefe 500g",
+   "e": [
+    "TEMPERO DO CHEFE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero chef jacquin 250g",
+   "e": [
+    "TEMPERO CHEFE JACQUIN"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pega marido 500g",
+   "e": [
+    "TEMPERO PEGA MARIDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pega esposa 250g",
+   "e": [
+    "TEMPERO PEGA ESPOSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero pega sogra 1kg",
+   "e": [
+    "TEMPERO PEGA SOGRA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pega rapaz 300g",
+   "e": [
+    "TEMPERO PEGA RAPAZ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "conquista sogra 500g",
+   "e": [
+    "CONQUISTA SOGRA",
+    "CONQUISTA SOGRA (cód 001465)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero baiano 1kg",
+   "e": [
+    "TEMPERO BAIANO C/PIMENTA",
+    "TEMPERO BAIANO S/PIMENTA",
+    "TEMPERO BAIANO C/PIM JOMIL",
+    "TEMPERO BAIANO S/PIM JOMIL",
+    "TEMPERO BAIANO DLU EM GRÃO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "tempero baiano com pimenta 500g",
+   "e": [
+    "TEMPERO BAIANO C/PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "baiano sem pimenta 500g",
+   "e": [
+    "TEMPERO BAIANO S/PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "baiano s/ pim jomil 1kg",
+   "e": [
+    "TEMPERO BAIANO S/PIM JOMIL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero baiano jomil com pimenta 500g",
+   "e": [
+    "TEMPERO BAIANO C/PIM JOMIL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero baiano em grão 250g",
+   "e": [
+    "TEMPERO BAIANO DLU EM GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero mineiro 500g",
+   "e": [
+    "TEMPERO MINEIRO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero nordestino 1kg",
+   "e": [
+    "TEMPERO NORDESTINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero gaucho 500g",
+   "e": [
+    "TEMPERO GAÚCHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero p churrasco 1kg",
+   "e": [
+    "TEMPERO P/CHURRASCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero para churrasco 500 g",
+   "e": [
+    "TEMPERO P/CHURRASCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero feijoada 250g",
+   "e": [
+    "TEMPERO FEIJOADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero de feijao 500g",
+   "e": [
+    "TEMPERO DE FEIJÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero p peixe 250g",
+   "e": [
+    "TEMPERO PARA PEIXE",
+    "TEMP. PEIXE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero costela ribs 1kg",
+   "e": [
+    "TEMPERO DE COSTELA RIBS",
+    "TEMPERO COSTELA RIBS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero vaca atolada 250g",
+   "e": [
+    "TEMPERO VACA ATOLADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "boi bandido 500g",
+   "e": [
+    "TEMPERO BOI BANDIDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero carne seca 300g",
+   "e": [
+    "TEMPERO CARNE SECA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero caipira 500g",
+   "e": [
+    "TEMPERO CAIPIRA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero carioca 500g",
+   "e": [
+    "TEMPERO CARIOCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero paulista 1kg",
+   "e": [
+    "TEMPERO PAULISTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "virada paulista 500g",
+   "e": [
+    "TEMPERO VIRADA PAULISTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero da vovo 500g",
+   "e": [
+    "TEMPERO DA VOVÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero fit 300g",
+   "e": [
+    "TEMPERO FIT"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero familia 1kg",
+   "e": [
+    "TEMPERO FAMILIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero vinagrete 250g",
+   "e": [
+    "TEMPERO VINAGRETE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero tartaro 200g",
+   "e": [
+    "TEMPERO TÁRTARO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chilli mexicano 250g",
+   "e": [
+    "TEMPERO CHILLI MEXICANO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero bife acebolado 500g",
+   "e": [
+    "TEMPERO BIFE ACEBOLADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "black rub 250g",
+   "e": [
+    "TEMPERO GOURMET BLACK RUB"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempera tudo 1kg",
+   "e": [
+    "TEMPERA TUDO FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero bem bolado 500g",
+   "e": [
+    "TEMPERO BEM BOLADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero paraiba 500g",
+   "e": [
+    "TEMPERO PARAÍBA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero master chef 250g",
+   "e": [
+    "TEMPERO MASTER CHEFE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "segredo do chefe 500g",
+   "e": [
+    "TEMPERO SEGREDO DO CHEFE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero de arroz e legumes 500g",
+   "e": [
+    "TEMPERO DE ARROZ E LEGUMES"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sazon 500g",
+   "e": [
+    "SAZON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sazon de legumes 250g",
+   "e": [
+    "SAZON DE LEGUMES"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sazon arroz 250g",
+   "e": [
+    "SAZON DE ARROZ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "brasileirinho 500g",
+   "e": [
+    "TEMP. BRASILEIRINHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero delicia 500g",
+   "e": [
+    "TEMP. DELÍCIA DLU"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sucesso da cozinha 1kg",
+   "e": [
+    "SUCESSO DA COZINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ouro da culinaria 500g",
+   "e": [
+    "OURO DA CULINÁRIA C/B"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mistura magica 250g",
+   "e": [
+    "MISTURA MAGICA C/L"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "maria bacon 500g",
+   "e": [
+    "MARIA BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "super bacon 250g",
+   "e": [
+    "SUPER BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "salsa cebola e bacon 500g",
+   "e": [
+    "SALSA, CEBOLA E BACON",
+    "T. SALSA,CEBOLA E BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "500g salsa, cebola e bacon",
+   "e": [
+    "SALSA, CEBOLA E BACON",
+    "T. SALSA,CEBOLA E BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero salsa cebola e alho 500g",
+   "e": [
+    "TEMPERO SALSA CEBOLA E ALHO (ITALIANO)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farofa bacon 1kg",
+   "e": [
+    "FAROFA BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farofa picante 500g",
+   "e": [
+    "FAROFA PICANTE",
+    "FAROFA PICANTE DLU"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farofa tradicional 1kg",
+   "e": [
+    "FAROFA TRADICIONAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo de galinha 500g",
+   "e": [
+    "CALDO DE GALINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo galinha 1kg",
+   "e": [
+    "CALDO DE GALINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo de carne 250g",
+   "e": [
+    "CALDO DE CARNE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo bacon 500g",
+   "e": [
+    "CALDO DE BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo cheddar 250g",
+   "e": [
+    "CALDO DE CHEDDAR",
+    "CALDO DE DE CHEDDAR"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "creme de cebola 500g",
+   "e": [
+    "CREME DE CEBOLA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "glutamato 500g",
+   "e": [
+    "GLUTAMATO AJINOMOTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ajinomoto 1kg",
+   "e": [
+    "GLUTAMATO AJINOMOTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "fumaça em po 250g",
+   "e": [
+    "FUMAÇA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "fumaca em pó premium 100g",
+   "e": [
+    "FUMAÇA EM PÓ PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri 500g",
+   "e": [
+    "CHIMICHURRI",
+    "CHIMICHURRI (cód 000082)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri defumado 250g",
+   "e": [
+    "CHIMICHURRI DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimi com limão 500g",
+   "e": [
+    "CHIMICHURRI COM LIMÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri c/ pimenta 250g",
+   "e": [
+    "CHIMICHURRI COM PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurry 1kg",
+   "e": [
+    "CHIMICHURRI",
+    "CHIMICHURRI (cód 000082)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri barbecue 500g",
+   "e": [
+    "CHIMICHURRI BARBECUE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri nordestino 300g",
+   "e": [
+    "CHIMICHURRI NORDESTINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri ana foods 500g",
+   "e": [
+    "CHIMICHURRI ANA FOODS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri defumado com pimenta 250g",
+   "e": [
+    "CHIMICHURRI DEFUMADO COM PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "2 kg chimichurri",
+   "e": [
+    "CHIMICHURRI",
+    "CHIMICHURRI (cód 000082)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix gourmet 500g",
+   "e": [
+    "MIX GOURMET"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix gourmet defumado 250g",
+   "e": [
+    "MIX GOURMET DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix de castanhas 500g",
+   "e": [
+    "MIX DE CASTANHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix nuts 300g",
+   "e": [
+    "MIX NUT"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sabor grill 500g",
+   "e": [
+    "SABOR GRILL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "realce de alho 250g",
+   "e": [
+    "REALCE DE ALHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "realce p saladas 250g",
+   "e": [
+    "REALCE P/ SALADAS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero limao e ervas finas 500g",
+   "e": [
+    "TEMPERO DE LIMÃO E ERVAS FINAS",
+    "LIMÃO COM ERVAS FINAS ESPECIAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ervas finas 250g",
+   "e": [
+    "ERVAS FINAS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "zatar 100g",
+   "e": [
+    "ZATHAR"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curry 500g",
+   "e": [
+    "CURRY"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curry temperado 250g",
+   "e": [
+    "CURRY TEMPERADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caril 100g",
+   "e": [
+    "CURRY"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero costela 500g",
+   "e": [
+    "TEMPERO DE COSTELA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "dry rub 500g",
+   "e": [
+    "DRY RUB COMPLETO",
+    "TEMPERO GOURMET DRY RUB"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "tempero italiano 500g",
+   "e": [
+    "TEMPERO SALSA CEBOLA E ALHO (ITALIANO)",
+    "ITALIANO GOURMET"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "farofa 1kg",
+   "e": [
+    "FAROFA AGRANEL",
+    "FAROFA TRADICIONAL",
+    "FAROFA BACON",
+    "FAROFA PICANTE"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "caldo de galinha jomil 1kg",
+   "e": [
+    "CALDO DE GALINHA JOMIL 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "caldo de carne penina",
+   "e": [
+    "CALDO DE CARNE PENINA 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "caldo de camarao",
+   "e": [
+    "CALDO DE CAMARAO 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "alho frito 1/2 kg",
+   "e": [
+    "ALHO FRITO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho frito meio kilo",
+   "e": [
+    "ALHO FRITO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho em flocos 250g",
+   "e": [
+    "ALHO FLOCOS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho granulado 500g",
+   "e": [
+    "ALHO GRANULADO/DESIDRATADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho desidratado 1kg",
+   "e": [
+    "ALHO GRANULADO/DESIDRATADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho roxo 500g",
+   "e": [
+    "DENTE DE ALHO ROXO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cabeça de alho 1kg",
+   "e": [
+    "ALHO CABEÇA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebola crispy 250g",
+   "e": [
+    "CEBOLA CRISPY"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebola em flocos 500g",
+   "e": [
+    "CEBOLA TIRAS FLOCOS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebolinha 100g",
+   "e": [
+    "CEBOLINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cheiro verde 250g",
+   "e": [
+    "CHEIRO VERDE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "salsa 100g",
+   "e": [
+    "SALSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "salsinha 200g",
+   "e": [
+    "SALSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho 1kg",
+   "e": [
+    "ALHO CABEÇA",
+    "ALHO FLOCOS",
+    "ALHO FRITO",
+    "ALHO GRANULADO/DESIDRATADO",
+    "DENTE DE ALHO ROXO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "alho pasta dlu 1kg",
+   "e": [
+    "ALHO PASTA 1KG DLU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "alho triturado jgm 1kg",
+   "e": [
+    "ALHO TRITURADO JGM 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "alho po jomil",
+   "e": [
+    "ALHO PÓ JOMIL 500 G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "cebola em pó jomil",
+   "e": [
+    "CEBOLA EM PÓ 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "oregano 500g",
+   "e": [
+    "ORÉGANO LEVE",
+    "ORÉGANO PERUANO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "coentro 100g",
+   "e": [
+    "COENTRO FOLHA",
+    "COENTRO GRÃO",
+    "COENTRO MOÍDO"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "canela pau 100g",
+   "e": [
+    "CANELA 30CM",
+    "CANELA CORTADA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "canela em casca 100g",
+   "e": [
+    "CANELA 30CM",
+    "CANELA CORTADA",
+    "CANELA JAVA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "canela 500g",
+   "e": [
+    "CANELA EM PÓ",
+    "CANELA 30CM",
+    "CANELA CORTADA",
+    "CANELA JAVA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "noz moscada 100g",
+   "e": [
+    "NOZ MOSCADA CAROÇO",
+    "NOZ MOSCADA MOÍDA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "creatina 250g",
+   "e": [
+    "CREATINA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "oregano peruano 1kg",
+   "e": [
+    "ORÉGANO PERUANO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "500 gr de oregano peruano",
+   "e": [
+    "ORÉGANO PERUANO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "oregáno leve 250g",
+   "e": [
+    "ORÉGANO LEVE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alecrim 100g",
+   "e": [
+    "ALECRIM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "manjericao 200g",
+   "e": [
+    "MANJERICÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "manjerona 100g",
+   "e": [
+    "MANJERONA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tomilho 50g",
+   "e": [
+    "TOMILHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "louro 100g",
+   "e": [
+    "LOURO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "folha de louro 50g",
+   "e": [
+    "LOURO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "louro moido 250g",
+   "e": [
+    "LOURO MOÍDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "hortelã 100g",
+   "e": [
+    "HORTELÃ FOLHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coentro em grão 250g",
+   "e": [
+    "COENTRO GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coentro moido 250g",
+   "e": [
+    "COENTRO MOÍDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "endro 100g",
+   "e": [
+    "ENDRO GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "erva doce 250g",
+   "e": [
+    "ERVA DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "erva-doce espanhola 500g",
+   "e": [
+    "ERVA DOCE ESPANHOLA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "funcho 250g",
+   "e": [
+    "FUNCHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "anis estrelado 100g",
+   "e": [
+    "ANIS ESTRELADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "camomila 100g",
+   "e": [
+    "CAMOMILA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "capim cidreira 100g",
+   "e": [
+    "CAPIM CIDREIRA SANTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "capim limao 100g",
+   "e": [
+    "CAPIM LIMÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "hibisco 250g",
+   "e": [
+    "HIBÍSCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chá verde 100g",
+   "e": [
+    "CHÁ VERDE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cha seca barriga 250g",
+   "e": [
+    "CHÁ SECA BARRIGA",
+    "CHÁ SECA BARRIGA (cód 001251)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cavalinha 100g",
+   "e": [
+    "CAVALINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "espinheira santa 100g",
+   "e": [
+    "ESPINHEIRA SANTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "melissa 50g",
+   "e": [
+    "MELISSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sene 100g",
+   "e": [
+    "SENE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "valeriana 50g",
+   "e": [
+    "VALERIANA (cód 001261)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "dente de leao 100g",
+   "e": [
+    "DENTE DE LEÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "guaco 100g",
+   "e": [
+    "GUACO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "eucalipto 100g",
+   "e": [
+    "EUCALIPTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "poejo 50g",
+   "e": [
+    "POEJO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tanchagem 100g",
+   "e": [
+    "TANCHAGEM",
+    "TANSAGEM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ginkgo biloba 100g",
+   "e": [
+    "GINKGO BILOBA",
+    "GINKGO BIOLBA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ginseng em po 100g",
+   "e": [
+    "GINSENG PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "maca peruana 250g",
+   "e": [
+    "MACA PERUANA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "maca peruana negra 100g",
+   "e": [
+    "MACA PERUANA NEGRA",
+    "MACA PERUANA NEGRA (cód 000272)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "moringa 100g",
+   "e": [
+    "MORINGA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "psyllium 250g",
+   "e": [
+    "PSYLLIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "psilium 200g",
+   "e": [
+    "PSYLLIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cardo mariano 100g",
+   "e": [
+    "CARDO MARIANO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tribulus 100g",
+   "e": [
+    "TRIBULLUS TERRESTRIS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colageno 500g",
+   "e": [
+    "COLÁGENO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gelatina em pó 250g",
+   "e": [
+    "GELATINA PÓ PURA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canela de velho 100g",
+   "e": [
+    "CHÁ CANELA DE VELHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canela em po 250g",
+   "e": [
+    "CANELA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "um quilo de canela em po",
+   "e": [
+    "CANELA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canela java 200g",
+   "e": [
+    "CANELA JAVA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravo 100g",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravo da india 50g",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravinho 50g",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravos 100g",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "noz moscada moida 250g",
+   "e": [
+    "NOZ MOSCADA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "nós moscada em caroço 100g",
+   "e": [
+    "NOZ MOSCADA CAROÇO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gengibre em po 250g",
+   "e": [
+    "GENGIBRE MOÍDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gengibre 100g",
+   "e": [
+    "GENGIBRE MOÍDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mostarda em grao 250g",
+   "e": [
+    "MOSTARDA GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mostarda moida 200g",
+   "e": [
+    "MOSTARDA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "feno grego 100g",
+   "e": [
+    "FENO GREGO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "bicarbonato 1kg",
+   "e": [
+    "BICARBONATO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "bicarbonato de sodio 500g",
+   "e": [
+    "BICARBONATO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal rosa 1kg",
+   "e": [
+    "SAL ROSA FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal rosa do himalaia 500g",
+   "e": [
+    "SAL ROSA FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal parrilla 500g",
+   "e": [
+    "SAL PARRILHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "flor de sal 100g",
+   "e": [
+    "FLOR DE SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal integral 1kg",
+   "e": [
+    "SAL INTEGRAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "uva passa 500g",
+   "e": [
+    "UVA PASSA PRETA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "uvas passas 500g",
+   "e": [
+    "UVA PASSA PRETA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "uva passa branca 250g",
+   "e": [
+    "UVA BRANCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "damasco 250g",
+   "e": [
+    "DAMASCO TURCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ameixa sem caroço 500g",
+   "e": [
+    "AMEIXA S/CAROÇO",
+    "AMEIXA SEM CAROÇO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tamara 500g",
+   "e": [
+    "TÂMARA JUMBO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha do para 250g",
+   "e": [
+    "CASTANHA DO PARÁ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanhas do pará 250g",
+   "e": [
+    "CASTANHA DO PARÁ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha de caju sem sal 250g",
+   "e": [
+    "CASTANHA DE CAJU W4 SEM SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "amendoim torrado com sal 1kg",
+   "e": [
+    "AMENDOIM TORRADO C/SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "nozes 250g",
+   "e": [
+    "NOZES QUARTOS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coco ralado 500g",
+   "e": [
+    "COCO RALADO FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farelo de aveia 500g",
+   "e": [
+    "FARELO DE AVEIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de aveia 1kg",
+   "e": [
+    "FARINHA DE AVEIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "granola 1kg",
+   "e": [
+    "GRANOLA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "granola zero 500g",
+   "e": [
+    "GRANOLA ZERO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chia 250g",
+   "e": [
+    "SEMENTE DE CHIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "semente de chia 500g",
+   "e": [
+    "SEMENTE DE CHIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "linhaça dourada 500g",
+   "e": [
+    "SEMENTE DE LINHAÇA DOURADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "linhaça marrom 1kg",
+   "e": [
+    "SEMENTE DE LINHAÇA MARROM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de linhaça 250g",
+   "e": [
+    "FARINHA DE LINHAÇA DOURADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gergelim branco 250g",
+   "e": [
+    "GERGELIM BRANCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gergelim preto 100g",
+   "e": [
+    "GERGELIM PRETO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "quinoa 500g",
+   "e": [
+    "QUINOA EM GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "grao de bico 12mm 1kg",
+   "e": [
+    "GRÃO DE BICO 12 MM",
+    "GRÃO DE BICO 12MM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lentilha 1kg",
+   "e": [
+    "LENTILHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lentilha vermelha 500g",
+   "e": [
+    "LENTILHA VERMELHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ervilha partida 500g",
+   "e": [
+    "ERVILHA PARTIDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canjica branca 1kg",
+   "e": [
+    "CANJICA BRANCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "milho de pipoca 2kg",
+   "e": [
+    "MILHO DE PIPOCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pipoca 1kg",
+   "e": [
+    "MILHO DE PIPOCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sagu 500g",
+   "e": [
+    "SAGU"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tapioca granulada 500g",
+   "e": [
+    "TAPIOCA GRANULADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "polvilho doce 1kg",
+   "e": [
+    "POVILHO DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "proteina de soja 500g",
+   "e": [
+    "PROTEÍNA DE SOJA ESCURA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de amendoa 250g",
+   "e": [
+    "FARINHA DE AMÊNDOA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de banana verde 250g",
+   "e": [
+    "FARINHA DE BANANA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "acucar de coco 500g",
+   "e": [
+    "AÇÚCAR DE COCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "leite de coco em po 250g",
+   "e": [
+    "LEITE DE COCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tomate seco 250g",
+   "e": [
+    "TOMATE SECO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "funghi 100g",
+   "e": [
+    "FUNGHI SECO(COGUMELO)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cogumelo seco 100g",
+   "e": [
+    "FUNGHI SECO(COGUMELO)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "bala de goma 500g",
+   "e": [
+    "BALA DE GOMA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimentao vermelho 100g",
+   "e": [
+    "PIMENTÃO VERMELHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cenoura desidratada 100g",
+   "e": [
+    "CENOURA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix de vegetais 250g",
+   "e": [
+    "MIX VEGETAIS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "limão desidratado 100g",
+   "e": [
+    "LIMÃO DESIDRATADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "limao siciliano 250g",
+   "e": [
+    "LIMÃO NATURAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "germe de trigo 500g",
+   "e": [
+    "GERME DE TRIGO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pepita de girassol 250g",
+   "e": [
+    "PEPITA DE GIRASSOL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "semente de abóbora torrada 250g",
+   "e": [
+    "SEMENTE DE ABÓBORA TORRADA COM SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de milho 1kg",
+   "e": [
+    "FARINHA DE MILHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha de caju 500g",
+   "e": [
+    "CASTANHA DE CAJU W4 COM SAL",
+    "CASTANHA DE CAJU W4 SEM SAL"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "pistache 200g",
+   "e": [
+    "PISTACHE TORRADO",
+    "PISTACHE TORRADO COM CASCA SEM SAL"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "aveia em flocos 1kg",
+   "e": [
+    "AVEIA FLOCOS Nº3",
+    "AVEIA FLOCOS LAMINADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "linhaça 500g",
+   "e": [
+    "SEMENTE DE LINHAÇA DOURADA",
+    "SEMENTE DE LINHAÇA MARROM",
+    "FARINHA DE LINHAÇA DOURADA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "grão de bico 1kg",
+   "e": [
+    "GRÃO DE BICO 12 MM",
+    "GRÃO DE BICO 12MM",
+    "GRÃO DE BICO 8MM"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "canjica 1kg",
+   "e": [
+    "CANJICA AMARELA",
+    "CANJICA BRANCA"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "semente de abobora 250g",
+   "e": [
+    "SEMENTE DE ABÓBORA CRUA",
+    "SEMENTE DE ABÓBORA TORRADA COM SAL",
+    "SEMENTE DE ABÓBORA PÓ"
+   ],
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "orégano argentino 1kg",
+   "e": [
+    "ORÉGANO ARGENTINO 1KG PCT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 bode amarela",
+   "e": [
+    "BODE AMARELA",
+    "BODE AMARELA (cód 001897)",
+    "PIM BODE AMARELA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 azeite bom dia 500ml",
+   "e": [
+    "AZEITE BOM DIA 500ML",
+    "AZEITE E.V.E. BOM DIA 500 ML VIDRO"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "3 leite de coco 200ml dubom",
+   "e": [
+    "DU BOM LEITE DE COCO 200ML",
+    "LEITE DE COCO 200 ML DUBOM"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "mel apisnutri silvestre 500g",
+   "e": [
+    "MEL APISNUTRI SILVESTRE 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 mel apisnutri eucalipto 1,1kg",
+   "e": [
+    "MEL APISNUTRI EUCALIPTO 1,1K"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 biquinho nativa 300g",
+   "e": [
+    "BIQUINHO NATIVA 300G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta biquinho 180g nativa",
+   "e": [
+    "PIMENTA BIQUINHO 180G NATIVA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 molho scorpion nativa",
+   "e": [
+    "MOLHO SCORPION NATIVA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 vinagre balsamico almori",
+   "e": [
+    "VINAGRE BALSÂMICO 280ML ALMORI"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "azeite de dende 900ml",
+   "e": [
+    "AZEITE DE DENDÊ 900ML SATELITE"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 dende kidende 200g",
+   "e": [
+    "AZEITE DE DENDÊ 200G KIDENDE"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "melatonina",
+   "e": [
+    "MELATONINA 60CAPS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "spirulina capsulas",
+   "e": [
+    "SPIRULINA 60CAPS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 psyllium 60 caps",
+   "e": [
+    "PSYLLIUM 60CAPS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "própolis verde apisnutri",
+   "e": [
+    "PRÓPOLIS VERDE APISNUTRI 30ML"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 palmito savana tolete",
+   "e": [
+    "PALMITO SAVANA TOLETE 300G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "tapioca pantanal 1kg",
+   "e": [
+    "TAPIOCA PANTANAL 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 tapioca lopes 500g",
+   "e": [
+    "TAPIOCA LOPES 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "acucar mascavo 1kg",
+   "e": [
+    "AÇÚCAR MASCAVO 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 sal rosa grosso 1kg",
+   "e": [
+    "SAL ROSA GROSSO DLU 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "sal rosa fino dlu 1kg",
+   "e": [
+    "SAL ROSA FINO DLU 1KG",
+    "SAL ROSA FINO"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pct chimichurri 1kg",
+   "e": [
+    "CHIMICHURRI PCT 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 pacotes de oregano argentino 500g",
+   "e": [
+    "ORÉGANO ARGENTINO 500G PCT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "creme de cebola dlu",
+   "e": [
+    "CREME DE CEBOLA 500G DLU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cx colorifico penina",
+   "e": [
+    "CX COLORIFICO PENINA 1KG (100G SACHÊ)"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "molho de alho 150g dlu",
+   "e": [
+    "MOLHO DE ALHO 150G DLU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "farofa king picanha",
+   "e": [
+    "FAROFA KING SABOR PICANHA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 manjericao jomil",
+   "e": [
+    "MANJERICÃO JOMIL 400G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "noz moscada jomil",
+   "e": [
+    "NOZ MOSCADA JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 curry jomil",
+   "e": [
+    "CURRY JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "canela java jomil",
+   "e": [
+    "CANELA JAVA JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 alho interessa 1kg",
+   "e": [
+    "ALHO INTERESSA 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "alho picado dlu 200g",
+   "e": [
+    "ALHO PICADO DLU 200G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta malagueta talisca 450g",
+   "e": [
+    "PIMENTA MALAGUETA TALISCA 450G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 malagueta 90g satelite",
+   "e": [
+    "MALAGUETA 90G SATELITE"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pimenta dedo de moça",
+   "e": [
+    "DEDO MOÇA",
+    "PIMENTA DEDO DE MOÇA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "cravo moido jomil",
+   "e": [
+    "CRAVO MOÍDO 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "louro em folha 100g",
+   "e": [
+    "LOURO EM FOLHA 100G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 erva doce pct 500g",
+   "e": [
+    "ERVA DOCE PCT 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "camomila 250g",
+   "e": [
+    "CAMOMILA 250G",
+    "CAMOMILA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "leite de coco 1 litro",
+   "e": [
+    "DUBOM LEITE DE COCO 1LITRO",
+    "LEITE DE COCO DUBOM 1 LT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "suco de uva integral",
+   "e": [
+    "SUCO DE UVA INTEGRAL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "guarana jesus",
+   "e": [
+    "GUARANÁ JESUS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 nescau",
+   "e": [
+    "NESCAU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "glutamato dlu",
+   "e": [
+    "GLUTAMATO DLU 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 bicarbonato muniz",
+   "e": [
+    "BICARBONATO MUNIZ ALIMENTOS 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "caldo de galinha capsum",
+   "e": [
+    "CALDO DE GALINHA CAPSUM"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 paprica doce capsum",
+   "e": [
+    "PAPRICA DOCE CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "curry tempera bem",
+   "e": [
+    "CURRY 500G TEMPERA BEM"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "tempero baiano dlu 500g",
+   "e": [
+    "TEMPERO BAIANO DLU 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta calabresa moida 500g",
+   "e": [
+    "PIMENTA CALABRESA MOÍDA 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 creatina 150g",
+   "e": [
+    "CREATINA 150G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "oleo de chia tani",
+   "e": [
+    "ÓLEO DE CHIA EXTRA VIRGEM TANI 250ML"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 lentilha canadense",
+   "e": [
+    "LENTILHA CANADENSE 1KG PCT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "sagu pct 1kg",
+   "e": [
+    "SAGU PCT 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 milho de pipoca pct",
+   "e": [
+    "MILHO DE PIPOCA 1KG PCT"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "agua mineral",
+   "e": [
+    "ÁGUA MINERAL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "mel 1kg",
+   "e": [
+    "MEL APISNUTRI 1KG SILVESTRE",
+    "MEL APISNUTRI TIRAS 1KG",
+    "MEL FLORES EUCALIPTO 1000G"
+   ],
+   "ctx": "balcao",
+   "amb": true
+  },
+  {
+   "t": "pasta de amendoim power",
+   "e": [
+    "PASTA DE AMENDOIM POWER 1 ONE",
+    "PASTA DE AMENDOIM CROCANTE POWER"
+   ],
+   "ctx": "balcao",
+   "amb": true
+  },
+  {
+   "t": "oleo de coco copra 500ml",
+   "e": [
+    "ÓLEO DE COCO COPRA EXTRA VIRGEM 500ML COPRA",
+    "ÓLEO DE COCO ORGÂNICO EXTRA VIRGEM COPRA 500ML"
+   ],
+   "ctx": "balcao",
+   "amb": true
+  },
+  {
+   "t": "açúcar refinado 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "arroz 5kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "feijão carioca 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de trigo 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "café 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "fubá 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal grosso 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "carqueja 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "boldo 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "unha de gato 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "cardamomo 50g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "zimbro 50g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "sumac 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "garam masala 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "leite em pó 400g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "queijo ralado 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta biquinho 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "mel silvestre 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "noz pecan 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha de baru 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "amêndoas 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta dedo de moça 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebola roxa 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho poró 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "chá mate 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "chá preto 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "erva mate 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal light 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "açúcar mascavo 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de mandioca 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de rosca 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "fermento 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "amido de milho 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "chocolate 70% 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "whey protein 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "spirulina em po 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "cacau em po 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "manteiga 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "gergelim torrado com shoyu 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino rosa 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "retiro as 17h",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "passo ai as 15:30",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "total 52 reais",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "troco pra 50",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "moro no ap 302",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "entrega dia 15",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "chego em 20 minutos",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "manda 2 sacolas",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "sao 3 pedidos",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pode ser 2 vezes no cartao",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "coca cola 2l",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "pao frances",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cerveja",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "detergente",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pacote de arroz",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "refrigerante 2 litros",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "pilha aa",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "sabão em pó",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "papel higienico",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "azeite gallo 500ml",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 maionese hellmanns",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 leite condensado",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "oleo de soja 900ml",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 creme dental",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "biscoito recheado",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 ovos",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "presunto 200g",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "cafe pilao 500g",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "molho de tomate",
+   "e": null,
+   "ctx": "balcao"
+  }
+ ],
+ "validacao": [
+  {
+   "t": "300g de pimenta calabreza",
+   "e": [
+    "PIMENTA CALABRESA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "meio quilo de pimenta do reino moida",
+   "e": [
+    "PIMENTA DO REINO MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "1 kg colorau caseiro",
+   "e": [
+    "COLORAL CASEIRO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "200 gr cominho em grão",
+   "e": [
+    "COMINHO GRÃO 99%"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica defumada - 1kg",
+   "e": [
+    "PAPRICA DEFUMADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pprica doce 250g",
+   "e": [
+    "PAPRICA DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "500g de açafrão temperado",
+   "e": [
+    "AÇAFRÃO TEMPERADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curcuma moida 1 kilo",
+   "e": [
+    "CÚRCUMA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ORÉGANO PERUANO 200G",
+   "e": [
+    "ORÉGANO PERUANO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "250g oregano leve",
+   "e": [
+    "ORÉGANO LEVE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon peper defumado 300g",
+   "e": [
+    "LEMON PEPPER DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "100g de alecrim",
+   "e": [
+    "ALECRIM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tomilho 100 gramas",
+   "e": [
+    "TOMILHO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "manjericão 100g",
+   "e": [
+    "MANJERICÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "1kg sal rosa fino",
+   "e": [
+    "SAL ROSA FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "2kg de sal parrilha",
+   "e": [
+    "SAL PARRILHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "500g tempero baiano s/pimenta",
+   "e": [
+    "TEMPERO BAIANO S/PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero baiano c/ pimenta 1kg",
+   "e": [
+    "TEMPERO BAIANO C/PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chimichurri com pimenta 500 g",
+   "e": [
+    "CHIMICHURRI COM PIMENTA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "1/2 kg chimichurri defumado",
+   "e": [
+    "CHIMICHURRI DEFUMADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo de bacon 1 kg",
+   "e": [
+    "CALDO DE BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "caldo de carne meio kilo",
+   "e": [
+    "CALDO DE CARNE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "creme de cebola 1kg",
+   "e": [
+    "CREME DE CEBOLA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon pepper fit meio kg",
+   "e": [
+    "LEMON PEPPER FIT"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero pega esposa 1/2 kg",
+   "e": [
+    "TEMPERO PEGA ESPOSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero pra churrasco 1kg",
+   "e": [
+    "TEMPERO P/CHURRASCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero de peixe 250g",
+   "e": [
+    "TEMPERO PARA PEIXE",
+    "TEMP. PEIXE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero mineiro 1kg",
+   "e": [
+    "TEMPERO MINEIRO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canela em pó 100g",
+   "e": [
+    "CANELA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravo 50 gramas",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cravo-da-índia 100g",
+   "e": [
+    "CRAVO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "noz-moscada moída 50g",
+   "e": [
+    "NOZ MOSCADA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gengibre moído 100g",
+   "e": [
+    "GENGIBRE MOÍDO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "anis 50g",
+   "e": [
+    "ANIS ESTRELADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "erva doce 1kg",
+   "e": [
+    "ERVA DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "camomila 50g",
+   "e": [
+    "CAMOMILA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "hibisco 100 g",
+   "e": [
+    "HIBÍSCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chá verde 250g",
+   "e": [
+    "CHÁ VERDE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "capim santo 100g",
+   "e": [
+    "CAPIM CIDREIRA SANTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "psyllium 500g",
+   "e": [
+    "PSYLLIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "chia 1kg",
+   "e": [
+    "SEMENTE DE CHIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "linhaça marrom 500g",
+   "e": [
+    "SEMENTE DE LINHAÇA MARROM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "gergelim branco 1kg",
+   "e": [
+    "GERGELIM BRANCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "quinoa em grão 500g",
+   "e": [
+    "QUINOA EM GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "grão de bico 8mm 1kg",
+   "e": [
+    "GRÃO DE BICO 8MM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lentilha 500g",
+   "e": [
+    "LENTILHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "uva passa preta 1kg",
+   "e": [
+    "UVA PASSA PRETA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "damasco turco 500g",
+   "e": [
+    "DAMASCO TURCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha do pará 1kg",
+   "e": [
+    "CASTANHA DO PARÁ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha de caju com sal 500g",
+   "e": [
+    "CASTANHA DE CAJU W4 COM SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "amendoim frito com sal 1kg",
+   "e": [
+    "AMENDOIM FRITO COM SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "mix de castanha 1kg",
+   "e": [
+    "MIX DE CASTANHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "granola tradicional 1kg",
+   "e": [
+    "GRANOLA TRADICIONAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "aveia laminada 1kg",
+   "e": [
+    "AVEIA FLOCOS LAMINADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de linhaça dourada 500g",
+   "e": [
+    "FARINHA DE LINHAÇA DOURADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coco ralado fino 1kg",
+   "e": [
+    "COCO RALADO FINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "açúcar de coco 250g",
+   "e": [
+    "AÇÚCAR DE COCO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "glutamato monossodico 1kg",
+   "e": [
+    "GLUTAMATO AJINOMOTO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "fumaça em pó tradicional 250g",
+   "e": [
+    "FUMAÇA EM PÓ TRADICIONAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho granulado 1kg",
+   "e": [
+    "ALHO GRANULADO/DESIDRATADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho frito 1kg",
+   "e": [
+    "ALHO FRITO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebola crispy 1kg",
+   "e": [
+    "CEBOLA CRISPY"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "salsa desidratada 100g",
+   "e": [
+    "SALSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cebolinha desidratada 50g",
+   "e": [
+    "CEBOLINHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cheiro-verde 100g",
+   "e": [
+    "CHEIRO VERDE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta calabresa moída premium 1kg",
+   "e": [
+    "PIMENTA CALABRESA MOÍDA PREMIUM"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta-rosa 50g",
+   "e": [
+    "PIMENTA ROSA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta jamaica em grão 100g",
+   "e": [
+    "PIMENTA JAMAICA GRÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta caiena 1kg",
+   "e": [
+    "PIMENTA CAIENA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "páprica picante 1kg",
+   "e": [
+    "PAPRICA PICANTE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colorau extra forte 500g",
+   "e": [
+    "COLORAL EXTRA FORTE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coloral paraíba 2kg",
+   "e": [
+    "COLORAL PARAÍBA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "açafrão especial 1kg",
+   "e": [
+    "AÇAFRÃO ESPECIAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero ana maria 500g",
+   "e": [
+    "TEMPERO ANA MARIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero do chef 1kg",
+   "e": [
+    "TEMPERO DO CHEFE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero nordestino 500 gr",
+   "e": [
+    "TEMPERO NORDESTINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero carne seca 1kg",
+   "e": [
+    "TEMPERO CARNE SECA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tempero feijoada 1kg",
+   "e": [
+    "TEMPERO FEIJOADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sazon 1kg",
+   "e": [
+    "SAZON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ervas finas 100g",
+   "e": [
+    "ERVAS FINAS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "curry 1kg",
+   "e": [
+    "CURRY"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "zathar 100g",
+   "e": [
+    "ZATHAR"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "bicarbonato 500g",
+   "e": [
+    "BICARBONATO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "canjica amarela 1kg",
+   "e": [
+    "CANJICA AMARELA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "milho de pipoca 1kg",
+   "e": [
+    "MILHO DE PIPOCA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tapioca granulada 1kg",
+   "e": [
+    "TAPIOCA GRANULADA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "polvilho 1kg",
+   "e": [
+    "POVILHO DOCE"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farofa de bacon 500g",
+   "e": [
+    "FAROFA BACON"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tomate seco 1kg",
+   "e": [
+    "TOMATE SECO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cogumelo 50g",
+   "e": [
+    "FUNGHI SECO(COGUMELO)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "maca peruana vermelha 250g",
+   "e": [
+    "MACA PERUANA VERMELHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "moringa em pó 100g",
+   "e": [
+    "MORINGA EM PÓ"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "colágeno 1kg",
+   "e": [
+    "COLÁGENO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "cúrcuma em pó 500g",
+   "e": [
+    "CÚRCUMA PÓ PURA",
+    "CÚRCUMA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "paprica doce limão 500g",
+   "e": [
+    "PAPRICA DOCE LIMÃO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "lemon pepper 2kg",
+   "e": [
+    "LEMON PEPPER",
+    "LEMON PEPPER (cód 000112)"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino 2 kg",
+   "e": [
+    "PIMENTA DO REINO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta branca 100g",
+   "e": [
+    "PIMENTA BRANCA",
+    "PIMENTA DO REINO BRANCA MOÍDA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "alho em flocos 1kg",
+   "e": [
+    "ALHO FLOCOS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "folha de hortelã 50g",
+   "e": [
+    "HORTELÃ FOLHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "coentro em folha 50g",
+   "e": [
+    "COENTRO FOLHA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "louro em folhas 100g",
+   "e": [
+    "LOURO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal integral 2kg",
+   "e": [
+    "SAL INTEGRAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "flor de sal 250g",
+   "e": [
+    "FLOR DE SAL"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "nozes 500g",
+   "e": [
+    "NOZES QUARTOS"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "pistache torrado 250g",
+   "e": [
+    "PISTACHE TORRADO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "ameixa 500g",
+   "e": [
+    "AMEIXA S/CAROÇO",
+    "AMEIXA SEM CAROÇO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "tâmaras 1kg",
+   "e": [
+    "TÂMARA JUMBO"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "farelo aveia 1kg",
+   "e": [
+    "FARELO DE AVEIA"
+   ],
+   "ctx": "ficha"
+  },
+  {
+   "t": "2 colorau jomil 500g",
+   "e": [
+    "COLORAL JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cominho penina 500g",
+   "e": [
+    "COMINHO 500G PENINA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta do reino jomil 500g",
+   "e": [
+    "PIMENTA DO REINO CONDIMENTADA JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 caldo de bacon jomil",
+   "e": [
+    "CALDO DE BACON JOMIL 1KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 lemon pepper jomil 500g",
+   "e": [
+    "LEMON PEPPER JOMIL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "3 alho triturado jgm 400g",
+   "e": [
+    "ALHO TRITURADO JGM 400G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 azeite de dende kidende 1l",
+   "e": [
+    "AZEITE DE DENDÊ 1L KIDENDE"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 leite de coco dubom 500ml",
+   "e": [
+    "LEITE DE COCO 500 ML DUBOM"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 mel casa do mel 500g",
+   "e": [
+    "MEL CASA DO MEL 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 mel apisnutri laranjeira 500g",
+   "e": [
+    "MEL APISNUTRI LARANJEIRA 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 molho de pimenta dlu",
+   "e": [
+    "MOLHO DE PIMENTA DLU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 vinagre de maçã almaromi",
+   "e": [
+    "VINAGRE DE MAÇÃ ALMAROMI 5,5 400ML"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 óleo de coco copra 200ml",
+   "e": [
+    "ÓLEO DE COCO EXTRA VIRGEM 200ML COPRA",
+    "ÓLEO DE COCO S/SABOR S/CHEIRO COPRA 200ML"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 tapioca lopes 1kg",
+   "e": [
+    "TAPIOCA LOPES 1 KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 farofa king tradicional",
+   "e": [
+    "FAROFA KING TRADICIONAL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 colorifico penina 500g",
+   "e": [
+    "COLORIFICO PENINA 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 creme de cebola capsum",
+   "e": [
+    "CREME DE CEBOLA CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 paprica picante capsum",
+   "e": [
+    "PAPRICA PICANTE CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 noz moscada tempera bem",
+   "e": [
+    "NOZ MOSCADA MOÍDA TEMPERA BEM"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 sal rosa grosso 500g",
+   "e": [
+    "SAL ROSA GROSSO DLU 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 canela java po 500g",
+   "e": [
+    "CANELA JAVA PÓ 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 louro moido 500g",
+   "e": [
+    "LOURO MOÍDO 500G",
+    "LOURO MOÍDO 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cravo moido 500g jomil",
+   "e": [
+    "CRAVO MOÍDO 500G JOMIL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 creatina monohidratada",
+   "e": [
+    "CREATINA MONOHIDRATADA 120CAPS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 cavalinha capsulas",
+   "e": [
+    "CAVALINHA 60CAPS"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 palmito picado savana",
+   "e": [
+    "PALMITO PICADO 1,8KG SAVANA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pimenta biquinho tia benta 500g",
+   "e": [
+    "PIMENTA BIQUINHO 500G TIA BENTA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 malagueta nativa 90g",
+   "e": [
+    "MALAGUETA 90G NATIVA"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 molho biquinho dlu",
+   "e": [
+    "MOLHO BIQUINHO DLU"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 propolis verde minamel",
+   "e": [
+    "PRÓPOLIS VERDE MINAMEL"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 farinha de aveia sem gluten",
+   "e": [
+    "FARINHA DE AVEIA SEM GLUTEN"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 aveia flocos finos 1kg",
+   "e": [
+    "AVEIA FLOCOS FINOS 1 KG"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 granola chocolate",
+   "e": [
+    "GRANOLA CHOCOLATE"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 açucar mascavo 500g",
+   "e": [
+    "AÇÚCAR MASCAVO 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 alho picado 3kg dlu",
+   "e": [
+    "ALHO PICADO 3KG DLU",
+    "ALHO PICADO 3KG DLU (cód 000315)"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 sal parrilla 300g",
+   "e": [
+    "SAL PARRILLA 300G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 caldo de legumes capsum",
+   "e": [
+    "CALDO DE LEGUMES CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 leite de coco em po 100g",
+   "e": [
+    "LEITE DE COCO EM PÓ 100G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 guaraná em pó capsum",
+   "e": [
+    "GUARANÁ EM PÓ CAPSUM 500G"
+   ],
+   "ctx": "balcao"
+  },
+  {
+   "t": "pimenta 500g",
+   "e": null,
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "tempero 1kg",
+   "e": null,
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "chá 100g",
+   "e": null,
+   "ctx": "ficha",
+   "amb": true
+  },
+  {
+   "t": "erva cidreira de folha larga 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta szechuan 50g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "sal negro 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "açúcar demerara 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "farinha de arroz 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "arroz integral 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "proteína isolada 1kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "biomassa de banana 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "castanha de macadâmia 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "avelã 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "cranberry 250g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "goji berry 100g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "cacau nibs 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "alcaçuz 50g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "gengibre cristalizado 200g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "pimenta do reino rosa 50g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "semente de girassol com casca 500g",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "feijão preto 2kg",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "grão de bico em lata",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "manda o pix por favor",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "fica 35 reais com a entrega",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "chego as 18h pra buscar",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "obrigada, até amanhã",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "meu cep 72000",
+   "e": null,
+   "ctx": "ficha"
+  },
+  {
+   "t": "1 coca 2 litros",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 pão de queijo",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 sabonete dove",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 azeite andorinha",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 ketchup heinz",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "2 margarina qualy",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 leite ninho 400g",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "3 miojo",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 vinagre castelo de alcool",
+   "e": null,
+   "ctx": "balcao"
+  },
+  {
+   "t": "1 pacote de macarrão",
+   "e": null,
+   "ctx": "balcao"
+  }
+ ]
+}

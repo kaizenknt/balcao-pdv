@@ -1,20 +1,20 @@
 {
   "balcao": {
-    "versao": "1.33.9",
-    "arquivo": "balcao/app-1.33.9.asar",
-    "tamanho": 5076432,
-    "sha256": "b8d83d66418500c997d5ec98e75bae4a5f0ef6e900657e9aca12028f4df8dc63",
+    "versao": "1.34.0",
+    "arquivo": "balcao/app-1.34.0.asar",
+    "tamanho": 5301361,
+    "sha256": "b70a0d833a7c26dd8c7768f634ff702282999e7f21fe7c859629c30df5e62a7a",
     "electron": "33.2.1",
-    "notas": "Código curto no caixa: digite o código interno antigo do produto e aperte Enter (por exemplo 81 para o Tempero Ana Maria; 81, 081 ou 000081 dão no mesmo). Produto a quilo abre a tela do peso. Se o mesmo código estiver em mais de um produto, aparece a lista para escolher. Enquanto digita números, a lista mostra os produtos pelo código. O código curto aparece no carrinho e na lista do estoque, e pode ser trocado no cadastro do produto (campo \"Código curto\", sem repetir). Vale também na consulta de preço e na Nova nota.",
-    "publicadoEm": "2026-10-27T19:03:39Z"
+    "notas": "Reconhecimento dos produtos nos pedidos (Ficha, WhatsApp e site) bem melhor: entende sinônimos (colorau = colorífico = coloral, açafrão-da-terra = cúrcuma, salsinha = salsa), erros de digitação (papirca, pimenta do rino, chimichurry), plural, palavras em qualquer ordem, marca (jomil cominho) e tamanho do pacote (500 g, 1 kg, 200 ml). Quando há mais de um produto possível (por exemplo \"colorau\" sozinho), ele não escolhe por conta: mostra \"confira\" com as opções. As trocas que você faz continuam valendo primeiro. Novo em Ajustes > Sistema: Reconhecimento com IA (opcional, desligado). Com uma chave da Anthropic, só as linhas em dúvida são perguntadas ao Claude, junto com os nomes dos produtos parecidos (nunca dados do cliente), e a sugestão aparece em amarelo para confirmar. Também dá para baixar uma IA local experimental, que roda sem internet.",
+    "publicadoEm": "2026-10-27T23:35:46Z"
   },
   "ficha": {
-    "versao": "1.6.2",
-    "arquivo": "ficha/app-1.6.2.asar",
-    "tamanho": 96585,
-    "sha256": "fc1ac512699743ed8f4676a1679cfa4ded46f6e29a3de55cd0e62bf7131f08e2",
+    "versao": "1.7.0",
+    "arquivo": "ficha/app-1.7.0.asar",
+    "tamanho": 145407,
+    "sha256": "c611816bc2875f0bcfdf858e6719890c3d43897ee8e0fed5407133aa6b6c13a0",
     "electron": "33.2.1",
-    "notas": "O botão Imprimir não trava mais: se a impressora não responder em 20 segundos, aparece o aviso \"A impressora não respondeu\" e dá para tentar de novo sem fechar o programa. A impressão não espera mais pelo Balcão PDV (o pedido vai para o caixa depois, sozinho) e a leitura dos textos copiados ficou mais rápida.",
-    "publicadoEm": "2026-10-26T14:46:16Z"
+    "notas": "Leitura dos pedidos do WhatsApp bem melhor: entende \"meio quilo\", \"1/2 kg\", \"100gr\", \"ana maria 500\" (500 g), sinônimos (colorau = colorífico, açafrão-da-terra = cúrcuma), erros de digitação e nomes como \"salsa, cebola e bacon\" sem separar em três itens. Recados como \"retiro às 17h\" ou \"troco pra 50\" não viram mais item. Itens em dúvida ficam em amarelo com \"confira\" e as opções na lista de conferir, e não viram correção aprendida enquanto você não mexer neles. Novo nas Configurações: Reconhecimento com IA (opcional, desligado), com a chave da Anthropic ou uma IA local experimental; o que a IA sugere aparece em amarelo para conferir e nunca atrasa a impressão.",
+    "publicadoEm": "2026-10-27T23:35:46Z"
   }
 }
