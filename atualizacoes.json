@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.1",
-    "arquivo": "balcao/app-1.33.1.asar",
-    "tamanho": 4665575,
-    "sha256": "575bb87d44f83e20cb4b32e46ecfc90f3e028b00b0a09c20c4c7ef5b613f3e6e",
+    "versao": "1.33.2",
+    "arquivo": "balcao/app-1.33.2.asar",
+    "tamanho": 4676071,
+    "sha256": "408a6fc7cb3e4b60d326857d0d9a6841412b5ea2ee651d3bc17ab6c804b0067e",
     "electron": "33.2.1",
-    "notas": "Correção: o aviso \"Após o vencimento será cobrado 3% de juros/mês e multa de 2%\" é das notas a prazo (boleto/duplicata), não do fiado. Saiu de Ajustes o painel \"Fiado: juros e multa\": a conta do cliente e o cupom do fiado voltam a mostrar só o valor devido, sem juros. Em Notas fiscais › Configuração há agora \"Cobrança a prazo\": na NF-e com pagamento a prazo, o aviso (você pode mudar o texto) e a lista das duplicatas com vencimento e valor saem nas informações complementares.",
-    "publicadoEm": "2026-10-27T03:36:50Z"
+    "notas": "Entrada de notas pelo celular: em Leitor › Nota do fornecedor há \"Abrir arquivo XML\" (o XML que chegou no WhatsApp, e-mail ou Arquivos). A nota fica guardada no Balcão, e depois ler o código de barras da DANFE acha a nota aqui mesmo, sem consultar a SEFAZ. A conferência ficou mais fácil no celular (um cartão por item) e a câmera do celular marca ou conta cada produto. Nota de teste (homologação) aparece com o aviso NOTA DE TESTE, nunca é informada à SEFAZ, e depois de confirmar dá para \"Desfazer esta entrada de teste\". Inclui a correção da 1.33.1: o aviso de juros vai para a NF-e a prazo (Notas fiscais › Configuração › Cobrança a prazo) e saiu do fiado.",
+    "publicadoEm": "2026-10-27T03:46:08Z"
   },
   "ficha": {
     "versao": "1.6.2",
