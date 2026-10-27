@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.33.3",
-    "arquivo": "balcao/app-1.33.3.asar",
-    "tamanho": 5020446,
-    "sha256": "5c8a1fe69a91fa1a3ec2cef4d8e24f3f7d36ad85b82b2367a7768c9e9937aa6c",
+    "versao": "1.33.4",
+    "arquivo": "balcao/app-1.33.4.asar",
+    "tamanho": 5023130,
+    "sha256": "93e211635f617307670e262010a58d71d50ed264fe17269fdf8b543311691716",
     "electron": "33.2.1",
-    "notas": "Leitura do código de barras da nota (DANFE) pelo celular: a câmera agora lê a imagem inteira em alta resolução (não só um quadradinho no meio), pode virar o celular deitado, tem zoom e lanterna quando o celular oferece, e insiste mais até ler. Corrigido um defeito do leitor que impedia ler o código de barras longo da DANFE. A foto do código também é lida em resolução cheia, em pé ou deitada. Se não ler, chegue mais perto ou use o zoom: o código de barras deve ocupar boa parte da largura da tela.",
-    "publicadoEm": "2026-10-27T04:17:26Z"
+    "notas": "Som no caixa: ao passar um código de barras (ou etiqueta da balança) sai um bipe curto quando o produto entra na venda, e dois toques graves quando não entra (não cadastrado, sem estoque ou etiqueta inválida). Vale também para o celular usado como leitor e para a câmera. Para ligar, desligar ou mudar o volume: Ajustes › Caixa e aparelhos › Som ao passar o código (vale só para aquele computador), com o botão \"Testar som\".",
+    "publicadoEm": "2026-10-27T16:51:15Z"
   },
   "ficha": {
     "versao": "1.6.2",
