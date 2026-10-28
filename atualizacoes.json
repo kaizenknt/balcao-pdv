@@ -1,20 +1,20 @@
 {
   "balcao": {
-    "versao": "1.34.5",
-    "arquivo": "balcao/app-1.34.5.asar",
-    "tamanho": 5331344,
-    "sha256": "80276c11b72ad1822e9ae0c8a522162b3d89931d47e47d6b282453b38a7bc864",
+    "versao": "1.35.0",
+    "arquivo": "balcao/app-1.35.0.asar",
+    "tamanho": 5355156,
+    "sha256": "9c8f6d6ec5e956bf62fb7ea8e8ac68fe4f06b814631f2319ff6505914921e67e",
     "electron": "33.2.1",
-    "notas": "Dá para mudar a quantidade de um item que já está no caixa: clique no peso (produto a quilo) ou no número (produto por unidade), ou aperte F10 com o item selecionado, e digite a quantidade nova (no peso vale 0,5, 0,500 ou 500 g). O total, o desconto do Pix/dinheiro e o preço alterado acompanham. Produto por unidade só aceita número inteiro, e o estoque é conferido como ao passar o produto. Item de etiqueta da balança fica com o valor da etiqueta: para mudar, tire e passe de novo.",
-    "publicadoEm": "2026-10-28T01:17:08Z"
+    "notas": "Nova IA do próprio computador, bem mais leve: não precisa mais baixar nada (o modelo de 147 MB saiu) e ela aprende com a loja. Quando você troca um produto num pedido, escolhe uma sugestão ou corrige na hora de passar no caixa, ela guarda. Depois de duas confirmações sem contradição, aquele jeito de escrever já vem certo sozinho; se alguém trocar de novo, volta a pedir para conferir. Nos pedidos, linhas em dúvida mostram 2 ou 3 opções para clicar. Na busca do caixa, a sugestão da IA aparece primeiro (\"é este\", \"sugestão\", \"parecido\"). Em Ajustes > Sistema, \"O que a IA aprendeu\" mostra tudo o que ela guardou, com acerto dos últimos 30 dias, e deixa apagar. A Ficha de Pesagem usa e envia o mesmo aprendizado. Ligar produtos ao site: palavras de descrição (\"de sódio\", \"desidratado\", \"em folha\"...) não atrapalham mais quando o nome principal é único, e as ligações que você já fez ensinam as próximas.",
+    "publicadoEm": "2026-10-28T01:34:38Z"
   },
   "ficha": {
-    "versao": "1.7.1",
-    "arquivo": "ficha/app-1.7.1.asar",
-    "tamanho": 154432,
-    "sha256": "87e9129bc0bcd7ad0db8b03d06298b1e198298aae0b2898d119f6cc2893fdf2d",
+    "versao": "1.8.0",
+    "arquivo": "ficha/app-1.8.0.asar",
+    "tamanho": 157233,
+    "sha256": "e7553f1a7ae830953f1e219917b175a8bb736ed691199d442ce53c9af37e1d1d",
     "electron": "33.2.1",
-    "notas": "Ficha impressa nova (mesmas cores): número do pedido grande no topo, nome do cliente e horário de retirada em destaque, quantidade numa coluna só (\"500 g\", \"2 pacotes\"), coluna do produto mais larga, espaço maior para o peso conferido e letra maior. Cada pedido ganha um número do dia, e o horário de retirada é lido da mensagem (\"retiro às 17h\") e pode ser corrigido na tela. Itens em dúvida (amarelos) mostram as duas outras opções mais prováveis: um clique troca. Nomes em maiúsculas aparecem formatados (\"Tempero Ana Maria 500 g D'Lu\"), o que dá para desligar nas Configurações.",
-    "publicadoEm": "2026-10-28T00:18:16Z"
+    "notas": "Nova IA do próprio computador, leve e sem download (o modelo de 147 MB saiu). Ela aprende com as suas correções: quando você troca o produto de uma linha e imprime, ela guarda e manda para o Balcão; e recebe do Balcão o que a loja já ensinou lá. Depois de duas confirmações, aquele jeito de escrever já vem certo sozinho. Também: \"oi! 1kg de colorau\" não junta mais a saudação ao nome do produto.",
+    "publicadoEm": "2026-10-28T01:34:38Z"
   }
 }

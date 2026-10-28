@@ -26,6 +26,7 @@
   function normKey(s){ return words(s).join(" "); }
   /* mesmo casamento do Balcão PDV (casar-produto.js): linha com peso só vai para produto vendido por quilo,
      marca/embalagem no nome do produto pesa contra, abreviações (pim., temp., c/, s/) e "limão siciliano" -> limão natural */
+  let AP = null; try { AP = (typeof require === "function") ? require("./aprende-produto.js") : root.AprendeProduto; } catch(e) { AP = root.AprendeProduto || null; }
   let NBM = null; try { NBM = (typeof require === "function") ? require("./nome-bonito.js") : root.NomeBonito; } catch(e) { NBM = root.NomeBonito || null; }
   let CP = null;
   try { CP = (typeof require === "function") ? require("./casar-produto.js") : root.CasarProduto; } catch(e) { CP = root.CasarProduto || null; }
@@ -33,10 +34,10 @@
   const unidadeDe = (nome, unidades) => (unidades || {})[norm(String(nome).trim())] || "kg";
   // a lista de produtos montada uma vez (o casamento guarda um índice dela)
   let PROD_CACHE = null;
-  function produtosDe(catalog, unidades){
+  function produtosDe(catalog, unidades, mapa){
     const sig = catalog.length + "|" + catalog[0] + "|" + catalog[catalog.length-1] + "|" + catalog.join("").length;
-    if(PROD_CACHE && PROD_CACHE.unidades === unidades && PROD_CACHE.sig === sig) return PROD_CACHE.lista;
-    PROD_CACHE = {sig, unidades, lista: catalog.map(c=>({id:c, nome:c, unidade:unidadeDe(c, unidades)}))};
+    if(PROD_CACHE && PROD_CACHE.unidades === unidades && PROD_CACHE.mapa === mapa && PROD_CACHE.sig === sig) return PROD_CACHE.lista;
+    PROD_CACHE = {sig, unidades, mapa, lista: catalog.map(c=>({id:c, nome:c, unidade:unidadeDe(c, unidades), codigo: (mapa || {})[norm(String(c).trim())] || ""}))};
     return PROD_CACHE.lista;
   }
   /* aliases = correções aprendidas: { "papirca defumada": "Páprica defumada", ... }
@@ -50,11 +51,13 @@
     const coerente = nome => !peso || unidadeDe(nome, opc.unidades) === "kg";   // nunca peso em produto vendido por unidade
     if(aliases[key] && coerente(aliases[key])) return {nome:aliases[key], achou:true, aprendido:true, score:1};
     if(CP){
-      const produtos = produtosDe(catalog, opc.unidades);
+      const produtos = produtosDe(catalog, opc.unidades, opc.mapa);
       const it = {nome:name, quantidade:opc.quantidade, unidade: opc.unidade==="pacote" ? "pct" : (opc.unidade || "kg")};
-      const r = CP.casar(it, produtos, [], {pesagem:true});
+      let r = CP.casar(it, produtos, [], {pesagem:true});
+      // IA local: o que a loja já ensinou (aqui e no Balcão) e o que ela mais vende
+      if(AP && opc.aprendizado) { try { r = AP.refinar(it, r, produtos, opc.aprendizado, {pesagem:true}); } catch(e) {} }
       const candidatos = (r.candidatos || []).map(c => ({nome: c.p.nome, score: c.score}));
-      if(r.p) return {nome:r.p.nome, achou:true, aprendido:false, score: r.conf==="alta" ? Math.max(r.score, .9) : r.score, conf:r.conf, alternativas:(r.alternativas||[]).map(p=>p.nome), candidatos};
+      if(r.p) return {nome:r.p.nome, achou:true, aprendido:false, aprendidoIA: r.motivo === "aprendido", score: r.conf==="alta" ? Math.max(r.score, .9) : r.score, conf:r.conf, alternativas:(r.alternativas||[]).map(p=>p.nome), candidatos};
       if(r.motivo === "so-unidade") return {nome:name.trim().replace(/^./,c=>c.toUpperCase()), achou:false, score:0, soUnidade: r.sugestao && r.sugestao.nome, candidatos};
       if(CP.lerLinha) return {nome:name.trim().replace(/^./,c=>c.toUpperCase()), achou:false, score:r.score || 0, candidatos};   // o casamento novo já tolera erro de digitação: o antigo só erraria mais
     }
@@ -142,13 +145,13 @@
     t = t.replace(/\b(pim|temp|desid|def|moid|nat)\.\s+/gi,"$1 ");   // "pim. calabresa" é um item só (o ponto não separa)
     t = t.replace(/\b(\d{1,2}):(\d{2})\b/g,"$1h$2");                   // "15:30" é hora: os dois-pontos não separam
     // separa os itens guardando o separador ("salsa, cebola e bacon" pode ser um produto só)
-    const pedacos = t.split(/(\n|(?<!\d),|,(?!\d)|;|\.\s|\s+e\s+|\s+\+\s+)/i);
+    const pedacos = t.split(/(\n|(?<!\d),|,(?!\d)|;|\.\s|!+\s*|\s+e\s+|\s+\+\s+)/i);   // oi! 1kg de colorau: a saudação não entra no nome
     const parts = [], seps = [];
     for(let i=0;i<pedacos.length;i+=2){ const x = (pedacos[i]||"").trim(); if(x){ parts.push(x); seps.push((pedacos[i+1]||"").trim().toLowerCase()); } }
     // na vigia da área de transferência, texto com muitas partes não é pedido de tempero (planilha, relatório): nem procura produto
     if(opts.maxPartes && parts.length > opts.maxPartes) return {cliente: wa.cliente, itens: [], duvidas: [], texto: wa.texto.trim(), matched: 0, explicitUnits: 0, fortes: 0, grande: true};
     const CAMPO = /^(nome|telefone|tel|fone|celular|whats(app)?|endere[cç]o|cep|cnpj|cpf|nota fiscal|pagamento|entrega|estimativa|total|subtotal|desconto|obs(erva[cç](ão|oes|ões))?|c[oó]digo|pedido n)\b\s*[:\-]/i;
-    const casa = (name, u, q) => matchCatalog(name, catalog, aliases, {unidades: opts.unidades, unidade: u, quantidade: q});
+    const casa = (name, u, q) => matchCatalog(name, catalog, aliases, {unidades: opts.unidades, unidade: u, quantidade: q, mapa: opts.mapa, aprendizado: opts.aprendizado});
     const juntavel = s => s === "," || s === "e";
     const juntar = (a, b) => parts.slice(a, b+1).map((x, k) => x + (a+k < b ? (seps[a+k] === "," ? ", " : " e ") : "")).join("");   // mantém a vírgula e o "e" do cliente
     for(let i=0;i<parts.length;i++){
@@ -192,7 +195,8 @@
       if(unid==="pacote"||unid==="pote") duvidas.push(`${nb(prod.nome)}: confirmar o tamanho do ${unid}.`);
       if(!prod.achou) duvidas.push(prod.soUnidade ? `"${name}": só achei ${nb(prod.soUnidade)}, que é vendido por unidade. Escolha o produto a granel.` : `"${name}" não está na lista de produtos. Confira o nome.`);
       else if(prod.conf && prod.conf !== "alta") duvidas.push(`"${name}" virou ${nb(prod.nome)}: confira${prod.alternativas && prod.alternativas.length ? " (também pode ser " + prod.alternativas.map(nb).join(" ou ") + ")" : ""}.`);
-      const item = {produto:prod.nome, quantidade:qty, unidade:unid, alerta:!prod.achou, bruto:name};
+      const item = {produto:prod.nome, quantidade:qty, unidade:unid, alerta:!prod.achou, bruto:name, sugerido: prod.achou ? prod.nome : ""};
+      if(prod.conf === "alta" && prod.aprendidoIA) item.aprendido = true;
       if(prod.achou && prod.conf && prod.conf !== "alta"){ item.confira = true; item.conf = prod.conf; if(prod.alternativas && prod.alternativas.length) item.alternativas = prod.alternativas.slice(0, 2); }
       if(prod.achou && prod.conf) item.conf = prod.conf;
       if(prod.candidatos) Object.defineProperty(item, "candidatos", {value: prod.candidatos, enumerable: false});   // para a IA (não vai para o arquivo)
