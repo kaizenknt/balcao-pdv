@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.34.4",
-    "arquivo": "balcao/app-1.34.4.asar",
-    "tamanho": 5328187,
-    "sha256": "da364e8bc67b05d748d555c92015f8f9a4bf1a1cab54306c3f36a9b79ff3631e",
+    "versao": "1.34.5",
+    "arquivo": "balcao/app-1.34.5.asar",
+    "tamanho": 5331344,
+    "sha256": "80276c11b72ad1822e9ae0c8a522162b3d89931d47e47d6b282453b38a7bc864",
     "electron": "33.2.1",
-    "notas": "Desconto automático do Pix/dinheiro: regra simples. Venda de varejo ganha os 5% no Pix ou dinheiro a partir de R$ 100, sobre o total. Venda de atacado não ganha (o atacado já tem o preço dele): conta como atacado quando a tabela \"Atacado\" (F6) está ligada ou quando algum item está no preço de atacado (fardo ou pedido marcado como atacado). O aviso no caixa diz \"Venda no atacado: o desconto de 5% é só para o varejo\".",
-    "publicadoEm": "2026-10-28T01:07:31Z"
+    "notas": "Dá para mudar a quantidade de um item que já está no caixa: clique no peso (produto a quilo) ou no número (produto por unidade), ou aperte F10 com o item selecionado, e digite a quantidade nova (no peso vale 0,5, 0,500 ou 500 g). O total, o desconto do Pix/dinheiro e o preço alterado acompanham. Produto por unidade só aceita número inteiro, e o estoque é conferido como ao passar o produto. Item de etiqueta da balança fica com o valor da etiqueta: para mudar, tire e passe de novo.",
+    "publicadoEm": "2026-10-28T01:17:08Z"
   },
   "ficha": {
     "versao": "1.7.1",
