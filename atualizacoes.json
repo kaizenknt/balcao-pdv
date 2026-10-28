@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.35.0",
-    "arquivo": "balcao/app-1.35.0.asar",
-    "tamanho": 5355156,
-    "sha256": "9c8f6d6ec5e956bf62fb7ea8e8ac68fe4f06b814631f2319ff6505914921e67e",
+    "versao": "1.36.0",
+    "arquivo": "balcao/app-1.36.0.asar",
+    "tamanho": 5425582,
+    "sha256": "b09150d92e692b9d2d3a3884dfe026202c34cf9ee286098558371e525fdb5b72",
     "electron": "33.2.1",
-    "notas": "Nova IA do próprio computador, bem mais leve: não precisa mais baixar nada (o modelo de 147 MB saiu) e ela aprende com a loja. Quando você troca um produto num pedido, escolhe uma sugestão ou corrige na hora de passar no caixa, ela guarda. Depois de duas confirmações sem contradição, aquele jeito de escrever já vem certo sozinho; se alguém trocar de novo, volta a pedir para conferir. Nos pedidos, linhas em dúvida mostram 2 ou 3 opções para clicar. Na busca do caixa, a sugestão da IA aparece primeiro (\"é este\", \"sugestão\", \"parecido\"). Em Ajustes > Sistema, \"O que a IA aprendeu\" mostra tudo o que ela guardou, com acerto dos últimos 30 dias, e deixa apagar. A Ficha de Pesagem usa e envia o mesmo aprendizado. Ligar produtos ao site: palavras de descrição (\"de sódio\", \"desidratado\", \"em folha\"...) não atrapalham mais quando o nome principal é único, e as ligações que você já fez ensinam as próximas.",
-    "publicadoEm": "2026-10-28T01:34:38Z"
+    "notas": "Etiquetas de preço para a gôndola: em Estoque > Etiquetas (ou no botão Etiqueta do produto, ou marcando vários produtos na lista). Escolha os produtos pelo leitor, pelo código curto ou pelo nome, ou de uma vez: os de preço alterado, os alterados desde uma data, uma categoria ou os do último inventário. Veja a prévia em tamanho real e imprima na Argox (ou Elgin, Zebra, Bematech) pelo driver do Windows ou direto na impressora (PPLA). Tamanhos prontos (60×30, 50×30, 40×25, 100×30...) ou outro tamanho, 1 a 3 por fileira, ajuste fino e \"Imprimir teste\" com régua para descobrir o tamanho da etiqueta. O código de barras do granel é o código interno da loja (2 + código curto), e o caixa lê esse código e também o das etiquetas antigas. Quando o preço muda (no cadastro ou na importação), o produto fica com \"Etiqueta desatualizada\" e o Estoque mostra quantas etiquetas faltam imprimir.",
+    "publicadoEm": "2026-10-28T14:36:53Z"
   },
   "ficha": {
     "versao": "1.8.0",
