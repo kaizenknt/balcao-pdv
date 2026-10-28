@@ -26,6 +26,7 @@
   function normKey(s){ return words(s).join(" "); }
   /* mesmo casamento do Balcão PDV (casar-produto.js): linha com peso só vai para produto vendido por quilo,
      marca/embalagem no nome do produto pesa contra, abreviações (pim., temp., c/, s/) e "limão siciliano" -> limão natural */
+  let NBM = null; try { NBM = (typeof require === "function") ? require("./nome-bonito.js") : root.NomeBonito; } catch(e) { NBM = root.NomeBonito || null; }
   let CP = null;
   try { CP = (typeof require === "function") ? require("./casar-produto.js") : root.CasarProduto; } catch(e) { CP = root.CasarProduto || null; }
   // unidade conhecida (sincronizada do Balcão: "kg" ou "un"); nome sem unidade conhecida é tratado como granel
@@ -129,6 +130,7 @@
     const MIN_G = opts.minG ?? 250;
     const wa = stripWhatsApp(rawText);
     const itens=[], duvidas=[];
+    const nb = n => (NBM && opts.nomesFormatados !== false) ? (NBM.ligar(true), NBM.nomeBonito(n)) : n;   // nome bonito só nas mensagens
     let explicitUnits = 0, matched = 0, fortes = 0;
 
     let t = " " + wa.texto + " ";
@@ -180,23 +182,31 @@
       if(prod.achou && (prod.aprendido || (prod.conf ? prod.conf === "alta" : prod.score >= .75))) fortes++;   // reconhecido com segurança
       if(!unid){
         unid="kg";
-        if(toNum(qty) > 20) duvidas.push(`${prod.nome}: veio só "${qty}", virou ${qty} kg. Confira se não eram gramas.`);
+        if(toNum(qty) > 20) duvidas.push(`${nb(prod.nome)}: veio só "${qty}", virou ${qty} kg. Confira se não eram gramas.`);
       }
       const gramas = unid==="kg" ? toNum(qty)*1000 : unid==="g" ? toNum(qty) : null;
       if(gramas!==null && gramas>0 && gramas<MIN_G){
-        duvidas.push(`${prod.nome}: cliente pediu ${qty} ${unid}, ajustado para o mínimo de ${MIN_G} g.`);
+        duvidas.push(`${nb(prod.nome)}: cliente pediu ${qty} ${unid}, ajustado para o mínimo de ${MIN_G} g.`);
         qty = String(MIN_G); unid = "g";
       }
-      if(unid==="pacote"||unid==="pote") duvidas.push(`${prod.nome}: confirmar o tamanho do ${unid}.`);
-      if(!prod.achou) duvidas.push(prod.soUnidade ? `"${name}": só achei ${prod.soUnidade}, que é vendido por unidade. Escolha o produto a granel.` : `"${name}" não está na lista de produtos. Confira o nome.`);
-      else if(prod.conf && prod.conf !== "alta") duvidas.push(`"${name}" virou ${prod.nome}: confira${prod.alternativas && prod.alternativas.length ? " (também pode ser " + prod.alternativas.join(" ou ") + ")" : ""}.`);
+      if(unid==="pacote"||unid==="pote") duvidas.push(`${nb(prod.nome)}: confirmar o tamanho do ${unid}.`);
+      if(!prod.achou) duvidas.push(prod.soUnidade ? `"${name}": só achei ${nb(prod.soUnidade)}, que é vendido por unidade. Escolha o produto a granel.` : `"${name}" não está na lista de produtos. Confira o nome.`);
+      else if(prod.conf && prod.conf !== "alta") duvidas.push(`"${name}" virou ${nb(prod.nome)}: confira${prod.alternativas && prod.alternativas.length ? " (também pode ser " + prod.alternativas.map(nb).join(" ou ") + ")" : ""}.`);
       const item = {produto:prod.nome, quantidade:qty, unidade:unid, alerta:!prod.achou, bruto:name};
-      if(prod.achou && prod.conf && prod.conf !== "alta"){ item.confira = true; item.conf = prod.conf; }
+      if(prod.achou && prod.conf && prod.conf !== "alta"){ item.confira = true; item.conf = prod.conf; if(prod.alternativas && prod.alternativas.length) item.alternativas = prod.alternativas.slice(0, 2); }
       if(prod.achou && prod.conf) item.conf = prod.conf;
       if(prod.candidatos) Object.defineProperty(item, "candidatos", {value: prod.candidatos, enumerable: false});   // para a IA (não vai para o arquivo)
       itens.push(item);
     }
-    return {cliente: wa.cliente, itens, duvidas, texto: wa.texto.trim(), matched, explicitUnits, fortes};
+    return {cliente: wa.cliente, itens, duvidas, texto: wa.texto.trim(), matched, explicitUnits, fortes, retirada: horarioRetirada(wa.texto)};
+  }
+  /* "retiro as 17h", "passo aí 15:30", "busco amanhã às 9" -> "17h", "15h30", "amanhã 9h" */
+  function horarioRetirada(texto){
+    const t = norm(texto), m = t.match(/\b(retir\w*|busc\w*|pego|pegar|passo|chego|vou buscar|entrega\w*)\b([^\n.;]{0,30}?)\b(\d{1,2})(?:\s*(?:h|:)\s*(\d{2}))?\s*(h|hs|hrs|horas)?\b/);
+    if(!m) return "";
+    const h = +m[3]; if(h > 23 || (!m[4] && !m[5] && !/\bas\b|\bàs\b/.test(m[2]))) return "";
+    const dia = /amanha/.test(m[2]) ? "amanhã " : /hoje/.test(m[2]) ? "hoje " : "";
+    return dia + h + "h" + (m[4] && m[4] !== "00" ? m[4] : "");
   }
 
   /* ---------- filtro: textos que não são pedido ----------
