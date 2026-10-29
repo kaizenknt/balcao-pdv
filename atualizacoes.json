@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.36.0",
-    "arquivo": "balcao/app-1.36.0.asar",
-    "tamanho": 5425582,
-    "sha256": "b09150d92e692b9d2d3a3884dfe026202c34cf9ee286098558371e525fdb5b72",
+    "versao": "1.36.1",
+    "arquivo": "balcao/app-1.36.1.asar",
+    "tamanho": 5441149,
+    "sha256": "132a8c02bda3dcdd8cb9e708bc0a60da2c148cc8361d9eff9e66763146f3e666",
     "electron": "33.2.1",
-    "notas": "Etiquetas de preço para a gôndola: em Estoque > Etiquetas (ou no botão Etiqueta do produto, ou marcando vários produtos na lista). Escolha os produtos pelo leitor, pelo código curto ou pelo nome, ou de uma vez: os de preço alterado, os alterados desde uma data, uma categoria ou os do último inventário. Veja a prévia em tamanho real e imprima na Argox (ou Elgin, Zebra, Bematech) pelo driver do Windows ou direto na impressora (PPLA). Tamanhos prontos (60×30, 50×30, 40×25, 100×30...) ou outro tamanho, 1 a 3 por fileira, ajuste fino e \"Imprimir teste\" com régua para descobrir o tamanho da etiqueta. O código de barras do granel é o código interno da loja (2 + código curto), e o caixa lê esse código e também o das etiquetas antigas. Quando o preço muda (no cadastro ou na importação), o produto fica com \"Etiqueta desatualizada\" e o Estoque mostra quantas etiquetas faltam imprimir.",
-    "publicadoEm": "2026-10-28T14:36:53Z"
+    "notas": "Cupom em papel contínuo sem sobrar papel: o cupom, a DANFE da NFC-e, o fechamento de caixa e os recibos agora saem numa página só, do tamanho exato do que foi impresso, mais um pequeno espaço no fim para destacar (ajustável, 8 mm). Em Ajustes > Caixa e aparelhos > Impressora do cupom, escolha o tipo \"Impressora de etiquetas em papel contínuo\" (Knup, Argox, Zebra, Elgin L42) e a largura do papel (58, 80, 100 mm ou outra). Para a Knup, use \"Direto na impressora (TSPL)\": o Balcão manda o cupom desenhado e a impressora puxa só o papel necessário, sem depender do tamanho de papel do driver. Também: régua em mm para conferir a largura, deslocar para a direita, escuro e opção de cortar em partes.",
+    "publicadoEm": "2026-10-29T12:44:24Z"
   },
   "ficha": {
     "versao": "1.8.0",
