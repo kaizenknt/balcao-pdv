@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.36.1",
-    "arquivo": "balcao/app-1.36.1.asar",
-    "tamanho": 5441149,
-    "sha256": "132a8c02bda3dcdd8cb9e708bc0a60da2c148cc8361d9eff9e66763146f3e666",
+    "versao": "1.37.0",
+    "arquivo": "balcao/app-1.37.0.asar",
+    "tamanho": 5449038,
+    "sha256": "7b2a2887c4bc15a8c9a2ef05c7dd85533f126c85b8f8b87e0a25a71e048875f5",
     "electron": "33.2.1",
-    "notas": "Cupom em papel contínuo sem sobrar papel: o cupom, a DANFE da NFC-e, o fechamento de caixa e os recibos agora saem numa página só, do tamanho exato do que foi impresso, mais um pequeno espaço no fim para destacar (ajustável, 8 mm). Em Ajustes > Caixa e aparelhos > Impressora do cupom, escolha o tipo \"Impressora de etiquetas em papel contínuo\" (Knup, Argox, Zebra, Elgin L42) e a largura do papel (58, 80, 100 mm ou outra). Para a Knup, use \"Direto na impressora (TSPL)\": o Balcão manda o cupom desenhado e a impressora puxa só o papel necessário, sem depender do tamanho de papel do driver. Também: régua em mm para conferir a largura, deslocar para a direita, escuro e opção de cortar em partes.",
-    "publicadoEm": "2026-10-29T12:44:24Z"
+    "notas": "Nova área Notas fiscais › Entrada e manifestação. Ali ficam as notas que os fornecedores emitiram para a loja (busca na SEFAZ ou pela chave), com Importar XML para um ou vários arquivos de uma vez, e manifestação do destinatário: marque uma ou várias notas e escolha Ciência da operação, Confirmar operação, Desconhecer ou Operação não realizada (também nota por nota, em Mais). O botão Estoque › Dar entrada › Notas recebidas leva para lá.",
+    "publicadoEm": "2026-10-30T13:17:26Z"
   },
   "ficha": {
     "versao": "1.8.0",
