@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.37.0",
-    "arquivo": "balcao/app-1.37.0.asar",
-    "tamanho": 5449038,
-    "sha256": "7b2a2887c4bc15a8c9a2ef05c7dd85533f126c85b8f8b87e0a25a71e048875f5",
+    "versao": "1.37.1",
+    "arquivo": "balcao/app-1.37.1.asar",
+    "tamanho": 5451649,
+    "sha256": "267e65a2454c91cc508b590e5e58ef9ef2f6c2c3a5404f26e1f0018a6dd56e41",
     "electron": "33.2.1",
-    "notas": "Nova área Notas fiscais › Entrada e manifestação. Ali ficam as notas que os fornecedores emitiram para a loja (busca na SEFAZ ou pela chave), com Importar XML para um ou vários arquivos de uma vez, e manifestação do destinatário: marque uma ou várias notas e escolha Ciência da operação, Confirmar operação, Desconhecer ou Operação não realizada (também nota por nota, em Mais). O botão Estoque › Dar entrada › Notas recebidas leva para lá.",
-    "publicadoEm": "2026-10-30T13:17:26Z"
+    "notas": "Pedidos do site: o código que o cliente recebe no site aparece no cartão do pedido, no topo dos detalhes, na impressão da separação (em destaque, com telefone, entrega e pagamento) e no cupom da venda feita a partir do pedido. Mais rápido: a tela Ligar produtos ao site abre bem mais depressa (as sugestões levavam vários segundos e seguravam o Balcão inteiro) e o Estoque mostra 150 produtos por vez, com \"Mostrar mais\".",
+    "publicadoEm": "2026-10-30T15:21:39Z"
   },
   "ficha": {
     "versao": "1.8.0",
