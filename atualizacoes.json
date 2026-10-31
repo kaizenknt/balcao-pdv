@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.39.0",
-    "arquivo": "balcao/app-1.39.0.asar",
-    "tamanho": 5461405,
-    "sha256": "f4b91e7eedaaf15d0aabedfa31e9e1a80ac3d3d676ccae3315344397247dc3bf",
+    "versao": "1.40.0",
+    "arquivo": "balcao/app-1.40.0.asar",
+    "tamanho": 5466094,
+    "sha256": "2965af15320fb77f15988b91e3c33c3b64a6f165a34686ee2d728bfb4153f124",
     "electron": "33.2.1",
-    "notas": "Mais rápido e mais limpo. Depois de cada venda, os outros computadores e celulares recebem só o que mudou (antes baixavam todas as vendas e todos os produtos de novo). Estoque, Financeiro, Clientes e Notas abrem e atualizam bem mais depressa. Produto: estoque mínimo, NCM, CEST e validade ficam numa parte que abre quando precisa. Listas de vendas: os botões Cupom e Cancelar aparecem ao passar o mouse na linha.",
-    "publicadoEm": "2026-10-31T13:21:17Z"
+    "notas": "Preço pela porcentagem. No cadastro do produto, ao lado do preço de venda e do preço de atacado tem o campo \"+ %\": digite quanto por cento em cima do custo (ex.: 80) e o preço é calculado sozinho. Se mudar o preço, a % acompanha; se mudar o custo depois de digitar a %, o preço acompanha. Na conferência da nota do fornecedor: \"Preço de venda pela %\" aplica a % em cima do custo da nota nos produtos novos ou em todos de uma vez.",
+    "publicadoEm": "2026-10-31T13:33:42Z"
   },
   "ficha": {
     "versao": "1.8.0",
