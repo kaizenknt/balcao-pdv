@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.40.0",
-    "arquivo": "balcao/app-1.40.0.asar",
-    "tamanho": 5466094,
-    "sha256": "2965af15320fb77f15988b91e3c33c3b64a6f165a34686ee2d728bfb4153f124",
+    "versao": "1.40.1",
+    "arquivo": "balcao/app-1.40.1.asar",
+    "tamanho": 5466775,
+    "sha256": "5e2313a5a1421b112a71ce40c46ce300a21c1f4e1edf208e0eac83a41842bcfa",
     "electron": "33.2.1",
-    "notas": "Preço pela porcentagem. No cadastro do produto, ao lado do preço de venda e do preço de atacado tem o campo \"+ %\": digite quanto por cento em cima do custo (ex.: 80) e o preço é calculado sozinho. Se mudar o preço, a % acompanha; se mudar o custo depois de digitar a %, o preço acompanha. Na conferência da nota do fornecedor: \"Preço de venda pela %\" aplica a % em cima do custo da nota nos produtos novos ou em todos de uma vez.",
-    "publicadoEm": "2026-10-31T13:33:42Z"
+    "notas": "O caixa não pede mais NCM. Com a emissão de NFC-e ligada, se algum produto da venda estiver sem NCM, o cupom sai normalmente (e imprime sozinho, se estiver marcado) e a tela só avisa \"Cupom sem nota fiscal\", com o botão \"Emitir a nota\" para fazer depois, se quiser.",
+    "publicadoEm": "2026-10-31T13:39:47Z"
   },
   "ficha": {
     "versao": "1.8.0",
