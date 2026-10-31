@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.37.1",
-    "arquivo": "balcao/app-1.37.1.asar",
-    "tamanho": 5451649,
-    "sha256": "267e65a2454c91cc508b590e5e58ef9ef2f6c2c3a5404f26e1f0018a6dd56e41",
+    "versao": "1.38.0",
+    "arquivo": "balcao/app-1.38.0.asar",
+    "tamanho": 5455322,
+    "sha256": "89a0a10e8e26e44c36dc7bc2f96d83e8714f0c72971fe30ae8e972def208450e",
     "electron": "33.2.1",
-    "notas": "Pedidos do site: o código que o cliente recebe no site aparece no cartão do pedido, no topo dos detalhes, na impressão da separação (em destaque, com telefone, entrega e pagamento) e no cupom da venda feita a partir do pedido. Mais rápido: a tela Ligar produtos ao site abre bem mais depressa (as sugestões levavam vários segundos e seguravam o Balcão inteiro) e o Estoque mostra 150 produtos por vez, com \"Mostrar mais\".",
-    "publicadoEm": "2026-10-30T15:21:39Z"
+    "notas": "Telas mais limpas. Pedido: cabeçalho com origem, código e quando chegou; o cliente num bloco e a entrega e o pagamento em outro; a observação do cliente em destaque no topo; nos itens só aparece aviso quando precisa conferir. Depois da venda: Nova venda e Imprimir à vista, o resto em Mais. Caixa: Sangria e Suprimento dentro do botão Gaveta; atalhos do teclado mais discretos. Clientes: os quadros de fiado só aparecem quando há fiado ou crédito. Ajustes: opções com título curto e explicação menor embaixo.",
+    "publicadoEm": "2026-10-31T10:56:15Z"
   },
   "ficha": {
     "versao": "1.8.0",
