@@ -1,12 +1,12 @@
 {
   "balcao": {
-    "versao": "1.38.0",
-    "arquivo": "balcao/app-1.38.0.asar",
-    "tamanho": 5455322,
-    "sha256": "89a0a10e8e26e44c36dc7bc2f96d83e8714f0c72971fe30ae8e972def208450e",
+    "versao": "1.39.0",
+    "arquivo": "balcao/app-1.39.0.asar",
+    "tamanho": 5461405,
+    "sha256": "f4b91e7eedaaf15d0aabedfa31e9e1a80ac3d3d676ccae3315344397247dc3bf",
     "electron": "33.2.1",
-    "notas": "Telas mais limpas. Pedido: cabeçalho com origem, código e quando chegou; o cliente num bloco e a entrega e o pagamento em outro; a observação do cliente em destaque no topo; nos itens só aparece aviso quando precisa conferir. Depois da venda: Nova venda e Imprimir à vista, o resto em Mais. Caixa: Sangria e Suprimento dentro do botão Gaveta; atalhos do teclado mais discretos. Clientes: os quadros de fiado só aparecem quando há fiado ou crédito. Ajustes: opções com título curto e explicação menor embaixo.",
-    "publicadoEm": "2026-10-31T10:56:15Z"
+    "notas": "Mais rápido e mais limpo. Depois de cada venda, os outros computadores e celulares recebem só o que mudou (antes baixavam todas as vendas e todos os produtos de novo). Estoque, Financeiro, Clientes e Notas abrem e atualizam bem mais depressa. Produto: estoque mínimo, NCM, CEST e validade ficam numa parte que abre quando precisa. Listas de vendas: os botões Cupom e Cancelar aparecem ao passar o mouse na linha.",
+    "publicadoEm": "2026-10-31T13:21:17Z"
   },
   "ficha": {
     "versao": "1.8.0",
